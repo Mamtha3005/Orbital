@@ -3,5 +3,14 @@ body {
 }
 
 p {
-    color: aqua;
+    color: darkgoldenrod;
+    font-size: 3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: fuchsia;
 }
