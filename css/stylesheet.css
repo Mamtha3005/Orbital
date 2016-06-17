@@ -3,35 +3,38 @@ body {
     background-size: cover;
 }
 
-p {
-    color: white;
-    font-size: 3em;
+#header {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
 }
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    color: white;
-}
-.title{
-    text-align: left;
-    color: white;
-    top: 0px;
-    margin-top: -50px;
-}
-#navbarTop ul{
-    display: inline;   
-}
-.nav{
-    color: white;
+#nav1 {
+    
+    float:center;
+    margin-left: 300px;
+    padding:5px;
     display: inline-block;
-    padding: 100px;
-    width: 30px;
-    height: 5px;
-    margin: 10px;
-    margin-left: -100px;
-    margin-top: -5000px;
-    font-size: 50px;
+}
+#nav2{
+    display: inline-block; 
+    float:center;
+}
+#nav3{
+    display: inline-block;
+    float:center;
+}
+
+#section {
+    width:350px;
+    float:left;
+    padding:10px; 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
 }
