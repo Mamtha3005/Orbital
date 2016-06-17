@@ -1,5 +1,6 @@
 body {
-    background-image: url("../assets/img/mamthabf.png");
+    background-image: url("../assets/img/laneInTheSea.jpg");
+    background-size: cover;
 }
 
 p {
@@ -13,4 +14,8 @@ a {
 
 a:hover {
     color: fuchsia;
+}
+.title{
+    text-align: center;
+    color: azure;
 }
