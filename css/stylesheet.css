@@ -4,7 +4,7 @@ body {
 }
 
 p {
-    color: darkgreen;
+    color: white;
     font-size: 3em;
 }
 
@@ -13,22 +13,25 @@ a {
 }
 
 a:hover {
-    color: fuchsia;
+    color: white;
 }
 .title{
     text-align: left;
-    color: azure;
+    color: white;
     top: 0px;
+    margin-top: -50px;
 }
 #navbarTop ul{
     display: inline;   
 }
 .nav{
+    color: white;
     display: inline-block;
     padding: 100px;
-    margin-left: 0px;
     width: 30px;
     height: 5px;
     margin: 10px;
+    margin-left: -100px;
+    margin-top: -5000px;
     font-size: 50px;
 }
