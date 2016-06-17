@@ -1,10 +1,10 @@
 body {
-    background-image: url("../assets/img/laneInTheSea.jpg");
+    background-image: url("../assets/img/winter.jpg");
     background-size: cover;
 }
 
 p {
-    color: darkgoldenrod;
+    color: darkgreen;
     font-size: 3em;
 }
 
@@ -16,6 +16,19 @@ a:hover {
     color: fuchsia;
 }
 .title{
-    text-align: center;
+    text-align: left;
     color: azure;
+    top: 0px;
+}
+#navbarTop ul{
+    display: inline;   
+}
+.nav{
+    display: inline-block;
+    padding: 100px;
+    margin-left: 0px;
+    width: 30px;
+    height: 5px;
+    margin: 10px;
+    font-size: 50px;
 }
