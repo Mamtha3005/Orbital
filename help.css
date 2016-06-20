@@ -1,0 +1,61 @@
+body{
+     margin: 0 auto;
+     background: url("http://i.imgur.com/Bp04i9Y.jpg") no-repeat center center fixed; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+      background-size: cover;
+     /*background-image: url("http://i.imgur.com/Bp04i9Y.jpg");
+     background-repeat: no-repeat;
+     background-size: 100% 720px;
+     background-position: center;*/
+}
+#container{
+    width: auto;  /*generally 800px*/
+    height:auto;
+    margin:auto;
+    margin-top: 1px; /*from the top of the pg*/
+    margin-bottom:21px; /*margin all the way ard the webpg when the screen size changes*/
+}
+#header{
+    height:150px;
+    background-color: none;
+    font-family:cursive;
+    font-size: 120px;
+}
+#mainbody{
+    background-image:none;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width:800px;
+    height:800px;
+    /*background-color: #03c;*/
+}
+#footer{
+    height:100px;
+    margin-bottom: 21px;
+    background-color:none;
+    clear:both; clear /*the floating mainbody&sidebar*/
+}
+#bluebox{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    margin:0 auto;
+    background-color: rgba(52,73,94,0.7);
+    border-radius: 4px;
+    margin-top: 150px; /*supp to be 150 but backgrd:( */ 
+    margin-left: 375px;
+    padding-top: 20px;
+}
+/* unvisited link */
+a:link {
+    color: black;
+}
+/* mouse over link */
+a:hover {
+    color: #2c3e50;
+}
+h3{
+    text-align: right;
+}

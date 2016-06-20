@@ -1,0 +1,102 @@
+<!-- https://www.youtube.com/watch?v=_fukWxTy31M#t=1712.1226 -->
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8">
+    <title>Learning how to make menu thing
+    </title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Page1.css" >
+    <link rel="stylesheet" type="text/css"   href="responsive.css" media="screen and (max-width: 800px)"> <!--to make the webpg responsive-->
+    <link rel="stylesheet" type="text/css"  href="menu.css"> <!-- for the menu -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+    var availableTags = [
+      "School Of Computing",
+      "Faculty Of Science",
+      "Faculty Of Law",
+      "Medicine",
+      "Faculty Of Engineering",
+      "School Of Design And Environment",
+      "School Of Business",
+      "Faculty Of Arts And Social Science",
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  });
+  </script>
+    <script>
+  $(function() {
+    var availableTags = [
+      "Computer Science",
+      "Information Systems",
+      "Business Analytics",
+      "Information Security",
+      "Computer Engineering",
+    ];
+    $( "#majors" ).autocomplete({
+      source: availableTags
+    });
+  });
+  </script>
+  <script>
+      $(function() {
+    var availableTags = [
+      "Analysis Of Alogorithm",
+      "Software Engineering",
+      " Programming Languages",
+      "Computer Security",
+      "Database",
+      "Artificial Intelligence",
+      "Networking",
+      "Computer Graphics and Games",
+      "Multimedia Information Retrieval",
+      "Parallel Computing",
+    ];
+    $( "#specialization" ).autocomplete({
+      source: availableTags
+    });
+  });
+  </script>
+</head> 
+<body>
+    <div id="container">
+        <div id="header"><center>GradList</center></div>
+        <div id="menu">
+            <ul>
+                <center>
+                <li> <a href="AboutPage.html">About</a></li> 
+                <li> <a href="help.html">Help</a></li>
+                <li> <a href="ContactPage.html">Contact</a></li> </center>
+            </ul>
+        </div>
+        <div id="mainbody">
+            <div id="bluebox">
+                <div class="ui-widget">
+                <form action="pg2.html">
+                    <div class="form-input">
+                        <label for="tags"></label>
+                        <input id="tags" type="text" name="username" placeholder="Enter Faculty">
+                    </div>
+                    <div class="form-input">
+                        <label for="majors"></label>
+                        <input id="majors" type="text" name="username" placeholder="Enter Major">
+                    </div>
+                    <div class="form-input">
+                        <label for="specialization"></label>
+                        <input id="specialization" type="text" name="username" placeholder="Enter Specialization">
+                    </div>
+                    <input type="submit" name="submit" value="NEXT" class="btn-login"><br>
+                </form>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

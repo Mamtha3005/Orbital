@@ -1,0 +1,20 @@
+title{
+   font-size: 10px; 
+    
+}
+body{
+    background-image: url(/Original/pinecone.jpg) ;
+    
+}
+h1 {
+    font-size: 50px;
+    font-style: italic;
+    font-family: cursive;
+  }
+h2{
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-synthesis: style;
+    flex-flow: row;
+    
+}
