@@ -86,3 +86,6 @@ input[type="text"], input[type="password"] {
     margin-left: 375px;
     padding-top: 40px;
 }
+.info{
+    font-size: 30px;
+}

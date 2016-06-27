@@ -1,6 +1,75 @@
-title{
+body{
+     margin: 0 auto;
+     background: url("http://www.iphonejapan.org/wp-content/uploads/2016/01/iphone%E4%BF%AE%E7%90%86-%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF.jpg") no-repeat center center fixed; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+      background-size: cover;
+}
+#container{
+    width: auto;  /*generally 800px*/
+    height:auto;
+    margin:auto;
+    margin-top: 1px; /*from the top of the pg*/
+    margin-bottom:21px; /*margin all the way ard the webpg when the screen size changes*/
+}
+#header{
+    height:150px;
+    background-color: none;
+    font-family: Colfax;
+    font-size: 120px;
+    color: #FF9999;
+}
+
+#mainbody{
+    background-image:none;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width:800px;
+    height:800px;
+    /*background-color: #03c;*/
+}
+#footer{
+    height:100px;
+    margin-bottom: 21px;
+    background-color:none;
+    clear:both; clear /*the floating mainbody&sidebar*/
+}
+#bluebox{
+    width: 600px;
+    height: 450px;
+    text-align: center;
+    margin:0 auto;
+    background-color: rgba(52,73,94,0.7);
+    border-radius: 4px;
+    margin-top: 150px; /*supp to be 150 but backgrd:( */ 
+    margin-left: 375px;
+    padding-top: 20px;
+    color: white;
+}
+
+.info{
+    font-size: 30px;
+}
+a{
+    text-decoration:none;
+    color:#2c3e50;
+}
+a:hover{
+    text-decoration:none;
+    color:#2c3e50;
+}
+
+
+
+
+/*title{
    font-size: 10px; 
     
+}
+#header{
+    font-family: Colfax;
+    color: #2c3e50;
 }
 body{
     background-image: url(/Original/pinecone.jpg) ;
@@ -17,4 +86,4 @@ h2{
     font-synthesis: style;
     flex-flow: row;
     
-}
+}*/

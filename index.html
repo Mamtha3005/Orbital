@@ -49,7 +49,7 @@
     var availableTags = [
       "Analysis Of Alogorithm",
       "Software Engineering",
-      " Programming Languages",
+      "Programming Languages",
       "Computer Security",
       "Database",
       "Artificial Intelligence",
@@ -72,13 +72,13 @@
                 <center>
                 <li> <a href="AboutPage.html">About</a></li> 
                 <li> <a href="help.html">Help</a></li>
-                <li> <a href="ContactPage.html">Contact</a></li> </center>
+                <li> <a href="newcontactpg.html">Contact</a></li> </center>
             </ul>
         </div>
         <div id="mainbody">
             <div id="bluebox">
                 <div class="ui-widget">
-                <form action="pg2.html">
+                <!--<form action="pg2.html">
                     <div class="form-input">
                         <label for="tags"></label>
                         <input id="tags" type="text" name="username" placeholder="Enter Faculty">
@@ -92,6 +92,38 @@
                         <input id="specialization" type="text" name="username" placeholder="Enter Specialization">
                     </div>
                     <input type="submit" name="submit" value="NEXT" class="btn-login"><br>
+                </form>-->
+                <form action="pg2.html">
+                <select name = "Faculty">
+                      <option value="School Of Computing">School Of Computing</option>
+                      <option value="Faculty Of Science">Faculty Of Science</option>
+                      <option value="Faculty Of Law">Faculty Of Law</option>
+                      <option value="Medicine">Medicine</option>
+                      <option value="Faculty Of Engineering">Faculty Of Engineering</option>
+                      <option value="School Of Design And Environment">School Of Design And Environment</option>
+                      <option value="School Of Business">School Of Business</option>
+                      <option value="Faculty Of Arts And Social Science">Faculty Of Arts And Social Science</option>
+                </select>
+                <select name = "Majors">
+                      <option value="Computer Science">Computer Science</option>
+                      <option value="Information Systems">Information Systems</option>
+                      <option value="Business Analytics">Business Analytics</option>
+                      <option value="Information Security">Information Security</option>
+                      <option value="Computer Engineering">Computer Engineering</option>
+                </select>
+                <select name = "Specialization">
+                      <option value="Analysis Of Alogorithm">Analysis Of Alogorithm</option>
+                      <option value="Software Engineering">Software Engineering</option>
+                      <option value="Programming Languages">Programming Languages</option>
+                      <option value="Computer Security">Computer Security</option>
+                      <option value="Database">Database</option>
+                      <option value="Artificial Intelligence">Artificial Intelligence</option>
+                      <option value="Networking">Networking</option>
+                      <option value="Computer Graphics and Games">Computer Graphics and Games</option>
+                      <option value="Multimedia Information Retrieval">Multimedia Information Retrieval</option>
+                      <option value="Parallel Computing">Parallel Computing</option>
+                </select><br>
+                <input type="submit" name="submit" value="NEXT" class="btn-login"><br>
                 </form>
                 </div>
             </div>

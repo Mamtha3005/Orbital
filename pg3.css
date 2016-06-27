@@ -1,6 +1,6 @@
 body{
      margin: 0 auto;
-     background: url("https://maxoffsky.com/word/wp-content/uploads/2014/04/andreasbg.png") no-repeat center center fixed; 
+     background: url("http://i.imgur.com/Bp04i9Y.jpg") no-repeat center center fixed; 
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
@@ -10,45 +10,40 @@ body{
      background-size: 100% 720px;
      background-position: center;*/
 }
-#container{
-    width: auto;  /*generally 800px*/
-    height:auto;
-    margin:auto;
-    margin-top: 1px; /*from the top of the pg*/
-    margin-bottom:21px; /*margin all the way ard the webpg when the screen size changes*/
-}
 #header{
     height:150px;
     background-color: none;
+    font-family: Colfax;
     font-size: 120px;
-    color: #DCA2CD;
-}
-#mainbody{
-    background-image:none;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width:800px;
-    height:800px;
-    /*background-color: #03c;*/
-}
-#footer{
-    height:100px;
-    margin-bottom: 21px;
-    background-color:none;
-    clear:both; clear /*the floating mainbody&sidebar*/
+    color:#2c3e50;
 }
 #bluebox{
     width: 600px;
-    height: 400px;
-    text-align:left;
+    height: 600px;
+    text-align: center;
     margin:0 auto;
     background-color: rgba(52,73,94,0.7);
     border-radius: 4px;
     margin-top: 150px; /*supp to be 150 but backgrd:( */ 
-    margin-left: 350px;
+    margin-left: 375px;
     padding-top: 20px;
-    padding-left: 10px;
+}
+#table{
+    margin: 10px auto;
+    text-align: center;
+    font-weight: normal;
+    width: 100%;
     color: white;
+    border: 1px solid;
+}
+#table th{
+    border-bottom: 1px solid #f6f6f6;
+    padding: 2px;
+    text-align: center;
+    border: 1px solid;
+}
+#table td{
+    border: 1px solid;
 }
 h1{
     text-align: center;
@@ -61,13 +56,13 @@ h1{
     border-top-right-radius: 50px;
     border-color: aquamarine;
 }
-a:link {
-    color: black;
-}
-/* mouse over link */
-a:hover {
-    color: #2c3e50;
-}
-h3{
+p{
+    color: white;
+    margin-left: 8px;
+    padding: 4px;
     text-align: left;
+    font-weight: normal;
+    font-family:serif;
+    font-weight: bold;
+    font-size: 20px;
 }
