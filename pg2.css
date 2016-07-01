@@ -55,15 +55,15 @@ h1{
     clear:both; clear /*the floating mainbody&sidebar*/
 }
 #bluebox2{
-    width: 500px;
-    height: 600px;
+    width: 1000px;
+    height: 2270px;
     text-align: center;
     margin:0 auto;
     background-color: rgba(52,73,94,0.7);
     border-radius: 8px;
     margin-top: 150px; /*supp to be 150 but backgrd:( */ 
-    margin-left: 375px;
-    padding-top: 40px;
+    margin-left: 200px;
+    padding-top: 10px;
 }
 input[type="text"], input[type="password"] {
     height: 45px;
