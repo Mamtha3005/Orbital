@@ -1,0 +1,676 @@
+{
+	"arr": [{
+			"GEM": [{
+				"code": "GES",
+				"name": "GES Singapore Studies pillar",
+				"type": "GEM",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "GEH",
+				"name": "GEH Human Cultures pillar",
+				"type": "GEM",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "GER",
+				"name": "GER Quantitative Reasoning pillar",
+				"type": "GEM",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "GET",
+				"name": "GET Thinking and Expression pillar",
+				"type": "GEM",
+				"mc": 4,
+				"key": false
+			}]
+		},
+
+
+
+		{
+			"core": [{
+				"code": "CS1010",
+				"name": "CS1010 Programming Methodology",
+				"type": "core",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS1020",
+				"name": "CS1020 Data Structures and Algorithms I",
+				"type": "core",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS1231",
+				"name": "CS1231 Discrete Structures",
+				"type": "core",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS2010",
+				"name": "CS2010 Data Structures and Algorithms II",
+				"type": "core",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS2100",
+				"name": "CS2100 Computer Organisation",
+				"type": "core",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS2103T",
+				"name": "CS2103T Software Engineering",
+				"type": "core",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS2105",
+				"name": "CS2105 Introduction to Computer Networks",
+				"type": "core",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS2106",
+				"name": "CS2106 Introduction to Operating Systems",
+				"type": "core",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS3230",
+				"name": "CS3230 Design and Analysis of Algorithms",
+				"type": "core",
+				"mc": 4,
+				"key": false
+			}]
+		},
+
+
+
+		{
+			"IT": [{
+				"code": "IS1103/FC",
+				"name": "IS1103/FC Computing and Society",
+				"type": "IT",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS2101",
+				"name": "CS2101 Effective Communication for Computing Professionals",
+				"type": "IT",
+				"mc": 4,
+				"key": false
+			}]
+		},
+
+
+
+		{
+			"math&sci": [{
+				"code": "MA1301/FC/X or A-Level Mathematics",
+				"name": "MA1301/FC/X Introductory Mathematics or A-Level Mathematics",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "MA1521",
+				"name": "MA1521 Calculus for Computing",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "MA1101R",
+				"name": "MA1101R Linear Algebra I",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "ST2334",
+				"name": "ST2334 Probability and Statistics",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "ST2131",
+				"name": "ST2131 Probability",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "ST2132",
+				"name": "ST2132 Mathematical Statistics",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "PC1221/PC1222/A-lvl Phy",
+				"name": "PC1221 Fundamentals of Physics I or PC1222 Fundamentals of Physics II or A-Level Physics ",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "MA2213",
+				"name": "MA2213 Numerical Analysis I",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "MA2214",
+				"name": "MA2214 Combinatorics and Graph",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CM1121",
+				"name": "CM1121 Organic Chemistry I",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CM1131",
+				"name": "CM1131 Physical Chemistry I",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CM1417",
+				"name": "CM1417 Fund. of Chemistry",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "LSM1301",
+				"name": "LSM1301 General Biology",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "LSM1302",
+				"name": "LSM1302 Genes and Society",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "PC1221",
+				"name": "PC1221 Fundamental of Physics I",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "PC1222",
+				"name": "PC1222 Fundamental of Physics II",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "PC1141",
+				"name": "PC1141 Physics I Introduction to Classical Mechanics",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "PC1142",
+				"name": "PC1142 Physics II Introduction to Thermodynamics and Optics",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "PC1143",
+				"name": "PC1143 Physics III Introduction to Electricity & Magnetism",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "PC1144",
+				"name": "PC1144 Physics IV Introduction to Modern Physics",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "PC1432",
+				"name": "PC1432 Physics IIE",
+				"type": "math&sci",
+				"mc": 4,
+				"key": false
+			}]
+		},
+
+
+		{
+			"b&d_teamPrj": [{
+				"code": "CS3201+CS3202",
+				"name": "CS3201 Software Engineering Project I and CS3202 Software Engineering Project II",
+				"type": "b&d_teamPrj",
+				"mc": 8,
+				"key": false
+			}, {
+				"code": "CS3216+CS3217",
+				"name": "CS3216 Software Product Engineering for Digital Markets and CS3217 Software Engineering on Modern Application Platforms",
+				"type": "b&d_teamPrj",
+				"mc": 8,
+				"key": false
+			}, {
+				"code": "CS3281+CS3282",
+				"name": "CS3281 Thematic Systems Project I and CS3282 Thematic Systems Project II",
+				"type": "b&d_teamPrj",
+				"mc": 8,
+				"key": false
+			}, {
+				"code": "CS3283+CS3284",
+				"name": "CS3283 Media Technology Project I and CS3284 Media Technology Project II",
+				"type": "b&d_teamPrj",
+				"mc": 8,
+				"key": false
+			}]
+		},
+
+
+		{
+			"IE": [{
+				"code": "CP3880",
+				"name": "CP3880 Advanced Technology Attachment Programme ",
+				"type": "IE",
+				"mc": 12,
+				"key": false
+			}, {
+				"code": "CP3200+CP3202",
+				"name": "CP3200 Internship and CP3202 Internship II",
+				"type": "IE",
+				"mc": 12,
+				"key": false
+			}, {
+				"code": "IS4010",
+				"name": "IS4010 Industry Internship Programme",
+				"type": "IE",
+				"mc": 12,
+				"key": false
+			}, {
+				"code": "CP3200+IndustryCourse",
+				"name": "CP3200 Internship and an Industry Course",
+				"type": "IE",
+				"mc": 12,
+				"key": false
+			}, {
+				"code": "NOC/iLead",
+				"name": "NOC or iLead",
+				"type": "IE",
+				"mc": 12,
+				"key": false
+			}, {
+				"code": "CP4101",
+				"name": "CP4101 BComp Dissertation",
+				"type": "IE",
+				"mc": 12,
+				"key": false
+			}]
+		},
+
+
+		{
+			"A&T": [{
+				"code": "CS3230",
+				"name": "CS3230 Design and Analysis of Algorithms (CFM)",
+				"type": "A&T",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS3236",
+				"name": "CS3236 Introduction to Information Theory",
+				"type": "A&T",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4231",
+				"name": "CS4231 Parallel and Distributed Algorithms",
+				"type": "A&T",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4232",
+				"name": "CS4232 Theory of Computation",
+				"type": "A&T",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4234",
+				"name": "CS4234 Optimisation Algorithms",
+				"type": "A&T",
+				"mc": 4,
+				"key": false
+			}]
+		},
+
+
+		{
+			"AI": [{
+				"code": "CS3243",
+				"name": "CS3243 Introduction to Artificial Intelligence",
+				"type": "AI",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS3244",
+				"name": "CS3244 Machine Learning",
+				"type": "AI",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4244",
+				"name": "CS4244 Knowledge-Based Systems",
+				"type": "AI",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4246",
+				"name": "CS4246 AI Planning and Decision Making",
+				"type": "AI",
+				"mc": 4,
+				"key": false
+			}]
+		},
+
+
+		{
+			"CGG": [{
+				"code": "CS3241",
+				"name": "CS3241 Computer Graphics",
+				"type": "CGG",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS3242",
+				"name": "CS3242 3D Modelling and Animation",
+				"type": "CGG",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS3247",
+				"name": "CS3247 Game Development",
+				"type": "CGG",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4247",
+				"name": "CS4247 Graphics Rendering Techniques",
+				"type": "CGG",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4350",
+				"name": "CS4350 Game Development Projects",
+				"type": "CGG",
+				"mc": 4,
+				"key": false
+			}]
+		},
+
+
+		{
+			"CSec": [{
+				"code": "CS2107",
+				"name": "CS2107 Introduction to Information Security",
+				"type": "CSec",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS3235",
+				"name": "CS3235 Computer Security",
+				"type": "CSec",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4236",
+				"name": "CS4236 Cryptography Theory and Practice",
+				"type": "CSec",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4238",
+				"name": "CS4238 Computer Security Practices",
+				"type": "CSec",
+				"mc": 4,
+				"key": false
+			}]
+		},
+
+
+		{
+			"Data": [{
+				"code": "CS2102",
+				"name": "CS2102 Database Systems",
+				"type": "data",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS3223",
+				"name": "CS3223 Database Systems Implementation",
+				"type": "data",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4221",
+				"name": "CS4221 Database Applications Design and Tuning",
+				"type": "data",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4224",
+				"name": "CS4224 Distributed Databases",
+				"type": "data",
+				"mc": 4,
+				"key": false
+			}]
+		},
+
+
+		{
+			"MIR": [{
+				"code": "CS2108",
+				"name": "CS2102 Database Systems",
+				"type": "mir",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS3245",
+				"name": "CS3245 Information Retrieval",
+				"type": "mir",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4242",
+				"name": "CS4242 Social Media Computing",
+				"type": "mir",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4248",
+				"name": "CS4248 Natural Language Processing",
+				"type": "mir",
+				"mc": 4,
+				"key": false
+			}]
+		},
+
+
+		{
+			"IM": [{
+				"code": "CS3241",
+				"name": "CS3241 Computer Graphics",
+				"type": "im",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS3242",
+				"name": "CS3242 3D Modelling and Animation",
+				"type": "im",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS3247",
+				"name": "CS3247 Game Development",
+				"type": "im",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4344",
+				"name": "CS4344 Network and Mobile Gaming",
+				"type": "im",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4350",
+				"name": "CS4350 Game Development Project",
+				"type": "im",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS3240",
+				"name": "CS3240 Interaction Design",
+				"type": "im",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS3249",
+				"name": "CS3249 User Interface Development",
+				"type": "im",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4249",
+				"name": "CS4249 Phenomena and Theories of HCI",
+				"type": "im",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4347",
+				"name": "CS4347 Sound and Music Computing",
+				"type": "im",
+				"mc": 4,
+				"key": false
+			}]
+		},
+
+
+		{
+			"NDS": [{
+				"code": "CS2105",
+				"name": "CS2105 Introduction to Computer Networks (CFM)",
+				"type": "nds",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS3103",
+				"name": "CS3103 Computer Networks Practice",
+				"type": "nds",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4222",
+				"name": "CS4222 Wireless Computing",
+				"type": "nds",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4226",
+				"name": "CS4226 Internet Architecture",
+				"type": "nds",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4274",
+				"name": "CS4274 Mobile and Multimedia Networking",
+				"type": "nds",
+				"mc": 4,
+				"key": false
+			}]
+		},
+
+		{
+			"PC": [{
+				"code": "CS3210",
+				"name": "CS3210 Parallel Computing",
+				"type": "pc",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS3211",
+				"name": "CS3211 Parallel and Concurrent Programming",
+				"type": "pc",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4231",
+				"name": "CS4231 Parallel and Distributed Algorithms",
+				"type": "pc",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4223",
+				"name": "CS4223 Multi-core Architecture",
+				"type": "pc",
+				"mc": 4,
+				"key": false
+			}]
+		},
+
+
+		{
+			"PL": [{
+				"code": "CS2104",
+				"name": "CS2104 Programming Language Concepts",
+				"type": "pl",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS3211",
+				"name": "CS3211 Parallel and Concurrent Programming",
+				"type": "pl",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4215",
+				"name": "CS4215 Programming Language Implementation",
+				"type": "pl",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4212",
+				"name": "CS4212 Compiler Design",
+				"type": "pl",
+				"mc": 4,
+				"key": false
+			}]
+		},
+
+		{
+			"SE": [{
+				"code": "CS2103/T",
+				"name": "CS2103/T Software Engineering (CFM)",
+				"type": "se",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS3213",
+				"name": "CS3213 Software Systems Design",
+				"type": "se",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4211",
+				"name": "CS4211 Formal Methods for Software Engineering",
+				"type": "se",
+				"mc": 4,
+				"key": false
+			}, {
+				"code": "CS4218",
+				"name": "CS4218 Software Testing",
+				"type": "se",
+				"mc": 4,
+				"key": false
+			}]
+		}
+
+	]
+}

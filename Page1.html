@@ -63,7 +63,7 @@
     });
   });
   </script>-->
-  
+    
     <script>
         $(function(){
             $('#Faculty').on('change', function(){
@@ -117,46 +117,6 @@
         <div id="mainbody">
             <div id="bluebox">
                 <div class="ui-widget">
-<!--
-                    <script>
-                    $(function(){
-                        $('#Faculty').on('change', function(){
-                            var val = $(this).val();
-                            var sub = $('#Majors');
-                            $('option', sub).filter(function(){
-                                if (
-                                     $(this).attr('data-group') === val 
-                                  || $(this).attr('data-group') === 'SHOW'
-                                ) {
-                                    $(this).show();
-                                } else {
-                                    $(this).hide();
-                                }
-                            });
-                        });
-                        $('#Faculty').trigger('change');
-                    });
-                    </script>
-                    <script>
-                    $(function(){
-                        $('#Majors').on('change', function(){
-                            var val = $(this).val();
-                            var sub = $('#Specialization');
-                            $('option', sub).filter(function(){
-                                if (
-                                     $(this).attr('data-group') === val 
-                                  || $(this).attr('data-group') === 'SHOW'
-                                ) {
-                                    $(this).show();
-                                } else {
-                                    $(this).hide();
-                                }
-                            });
-                        });
-                        $('#Majors').trigger('change');
-                    });
-                    </script>    
--->
                 <form action="pg2.html">
                     <select id = 'Faculty'>
                       <option data-group='Faculty' value='0'>--------------- Faculty --------------</option>

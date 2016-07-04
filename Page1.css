@@ -65,7 +65,7 @@ input[type="text"], input[type="password"] {
     border-radius: 4px;
     border: none;
 }
-.btn-login{
+#btn-login{
     padding: 15px 30px;
     color: #fff;
     border: none;
