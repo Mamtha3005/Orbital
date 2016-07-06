@@ -63,7 +63,7 @@
     });
   });
   </script>-->
-  
+    
     <script>
         $(function(){
             $('#Faculty').on('change', function(){
@@ -84,7 +84,7 @@
         });
     </script>
     <script>
-                    $(function(){
+        $(function(){
                         $('#Majors').on('change', function(){
                             var val = $(this).val();
                             var sub = $('#Specialization');
@@ -117,46 +117,6 @@
         <div id="mainbody">
             <div id="bluebox">
                 <div class="ui-widget">
-<!--
-                    <script>
-                    $(function(){
-                        $('#Faculty').on('change', function(){
-                            var val = $(this).val();
-                            var sub = $('#Majors');
-                            $('option', sub).filter(function(){
-                                if (
-                                     $(this).attr('data-group') === val 
-                                  || $(this).attr('data-group') === 'SHOW'
-                                ) {
-                                    $(this).show();
-                                } else {
-                                    $(this).hide();
-                                }
-                            });
-                        });
-                        $('#Faculty').trigger('change');
-                    });
-                    </script>
-                    <script>
-                    $(function(){
-                        $('#Majors').on('change', function(){
-                            var val = $(this).val();
-                            var sub = $('#Specialization');
-                            $('option', sub).filter(function(){
-                                if (
-                                     $(this).attr('data-group') === val 
-                                  || $(this).attr('data-group') === 'SHOW'
-                                ) {
-                                    $(this).show();
-                                } else {
-                                    $(this).hide();
-                                }
-                            });
-                        });
-                        $('#Majors').trigger('change');
-                    });
-                    </script>    
--->
                 <form action="pg2.html">
                     <select id = 'Faculty'>
                       <option data-group='Faculty' value='0'>--------------- Faculty --------------</option>
@@ -168,8 +128,8 @@
                       <option value='School Of Design And Environment'>School Of Design And Environment</option>
                       <option value='School Of Business'>School Of Business</option>
                       <option value='Faculty Of Arts And Social Science'>Faculty Of Arts And Social Science</option>
-                </select><br>
-                <select id = 'Majors'>
+                    </select><br>
+                    <select id = 'Majors'>
                       <option data-group='Majors' value='0'>------------------ Majors -------------------</option>
                       <option data-group='School Of Computing' value='Computer Science'>Computer Science</option>
                       <option data-group='School Of Computing' value='Information Systems'>Information Systems</option>
@@ -213,8 +173,8 @@
                       <option data-group='Faculty Of Arts And Social Science' value='Humanities'>Humanities</option>
                       <option data-group='Faculty Of Arts And Social Science' value='Social Sciences'>Social Sciences </option>
                       <option data-group='Faculty Of Arts And Social Science' value='Multidisciplinary'>Multidisciplinary</option>
-                </select><br>
-                <select id = 'Specialization'>
+                    </select><br>
+                    <select id = 'Specialization'>
                       <option data-group='Specialization' value='0'>---------------------- Specialization ----------------------</option>
                       <option data-group='Computer Science' value="No Specialization">No Specialization</option>
                       <option data-group='Computer Science' value="Analysis Of Alogorithm">Analysis Of Alogorithm</option>
@@ -325,7 +285,7 @@
                       <option data-group='Management Technology'  value="No Specialization">No Specialization</option>
                       <option data-group='Management'  value="No Specialization">No Specialization</option>
                       <option data-group='Management'  value="No Specialization">No Specialization</option>
-                </select><br>
+                    </select><br>
                     <!--<div class="form-input">
                         <label for="tags"></label>
                         <input id="tags" type="text" name="username" placeholder="Enter Faculty">

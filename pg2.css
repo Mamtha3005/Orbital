@@ -65,6 +65,21 @@ h1{
     margin-left: 200px;
     padding-top: 10px;
 }
+input[type= text], input[type=email], textarea{
+    outline: none;
+    transition: .2s all linear;
+    display:flex;
+    border: 1px solid silver;
+    border-radius: 4px;
+    padding: 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+input, textarea{
+    margin: 10px 0;
+}
 input[type="text"], input[type="password"] {
     height: 45px;
     width: 300px;
