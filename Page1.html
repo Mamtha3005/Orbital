@@ -12,7 +12,8 @@
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <link rel="stylesheet" href="/resources/demos/style.css">
-  
+<!--    <link href="style.css" rel="stylesheet">-->
+    
   <!--<script>
   $(function() {
     var availableTags = [
@@ -66,9 +67,9 @@
     
     <script>
         $(function(){
-            $('#Faculty').on('change', function(){
+            $("#Faculty").on('change', function(){
                 var val = $(this).val();
-                var sub = $('#Majors');
+                var sub = $("#Majors");
                 $('option', sub).filter(function(){
                                 if (
                                      $(this).attr('data-group') === val 
@@ -80,14 +81,14 @@
                                 }
                             });
             });
-            $('#Faculty').trigger('change');
+            $("#Faculty").trigger('change');
         });
     </script>
     <script>
         $(function(){
-                        $('#Majors').on('change', function(){
+                        $("#Majors").on('change', function(){
                             var val = $(this).val();
-                            var sub = $('#Specialization');
+                            var sub = $("#Specialization");
                             $('option', sub).filter(function(){
                                 if (
                                      $(this).attr('data-group') === val 
@@ -99,7 +100,7 @@
                                 }
                             });
                         });
-                        $('#Majors').trigger('change');
+                        $("#Majors").trigger('change');
                     });
     </script>    
 </head> 
@@ -117,39 +118,39 @@
         <div id="mainbody">
             <div id="bluebox">
                 <div class="ui-widget">
-                <form action="pg2.html">
-                    <select id = 'Faculty'>
-                      <option data-group='Faculty' value='0'>--------------- Faculty --------------</option>
-                      <option value='School Of Computing'>School Of Computing</option>
-                      <option value='Faculty Of Science'>Faculty Of Science</option>
-                      <option value='Faculty Of Law'>Faculty Of Law</option>
-                      <option value='Medicine'>Medicine</option>
-                      <option value='Faculty Of Engineering'>Faculty Of Engineering</option>
-                      <option value='School Of Design And Environment'>School Of Design And Environment</option>
-                      <option value='School Of Business'>School Of Business</option>
-                      <option value='Faculty Of Arts And Social Science'>Faculty Of Arts And Social Science</option>
+                <form action="pg2.php" method="POST">
+                    <select id = "Faculty" name = "Faculty" >
+                      <option data-group="Faculty" value= "select">--------------- Faculty --------------</option>
+                      <option value="School Of Computing">School Of Computing</option>
+                      <option value="Faculty Of Science">Faculty Of Science</option>
+                      <option value="Faculty Of Law">Faculty Of Law</option>
+                      <option value="Medicine">Medicine</option>
+                      <option value="Faculty Of Engineering">Faculty Of Engineering</option>
+                      <option value="School Of Design And Environment">School Of Design And Environment</option>
+                      <option value="School Of Business">School Of Business</option>
+                      <option value="Faculty Of Arts And Social Science">Faculty Of Arts And Social Science</option>
                     </select><br>
-                    <select id = 'Majors'>
-                      <option data-group='Majors' value='0'>------------------ Majors -------------------</option>
-                      <option data-group='School Of Computing' value='Computer Science'>Computer Science</option>
-                      <option data-group='School Of Computing' value='Information Systems'>Information Systems</option>
-                      <option data-group='School Of Computing' value='Business Analytics'>Business Analytics</option>
-                      <option data-group='School Of Computing' value='Information Security'>Information Security</option>
-                      <option data-group='Faculty Of Science' value='Chemistry'>Chemistry</option>
-                      <option data-group='Faculty Of Science' value='Computational Biology'>Computational Biology</option>
-                      <option data-group='Faculty Of Science' value='Data Science and Analytics'>Data Science and Analytics</option>
-                      <option data-group='Faculty Of Science' value='Environmental Studies'>Environmental Studies</option>
-                      <option data-group='Faculty Of Science' value='Food Science and Technology'>Food Science and Technology</option>
-                      <option data-group='Faculty Of Science' value='Life Sciences'>Life Sciences</option>
-                      <option data-group='Faculty Of Science' value='Mathematics'>Mathematics</option>
-                      <option data-group='Faculty Of Science' value='Applied Mathematics'>Applied Mathematics</option>
-                      <option data-group='Faculty Of Science' value='Physics'>Physics</option>
-                      <option data-group='Faculty Of Science' value='Pharmacy'>Pharmacy</option>
-                      <option data-group='Faculty Of Science' value='Quantitative Finance'>Quantitative Finance</option>
-                      <option data-group='Faculty Of Science' value='Statistics'>Statistics</option>
-                      <option data-group='Faculty Of Law' value='No Major'>No Major</option>
-                      <option data-group='Medicine' value='M.B.B.S.'>M.B.B.S.</option>
-                      <option data-group='Medicine' value='Nursing'>Nursing</option>
+                    <select id = "Majors" name = "Majors">
+                      <option data-group="Majors" value= "select">------------------ Majors -------------------</option>
+                      <option data-group="School Of Computing" value="Computer Science">Computer Science</option>
+                      <option data-group="School Of Computing" value="Information Systems">Information Systems</option>
+                      <option data-group="School Of Computing" value="Business Analytics">Business Analytics</option>
+                      <option data-group="School Of Computing" value="Information Security">Information Security</option>
+                      <option data-group="Faculty Of Science" value="Chemistry">Chemistry</option>
+                      <option data-group="Faculty Of Science" value="Computational Biology">Computational Biology</option>
+                      <option data-group="Faculty Of Science" value="Data Science and Analytics">Data Science and Analytics</option>
+                      <option data-group="Faculty Of Science" value="Environmental Studies">Environmental Studies</option>
+                      <option data-group="Faculty Of Science" value="Food Science and Technology">Food Science and Technology</option>
+                      <option data-group="Faculty Of Science" value="Life Sciences">Life Sciences</option>
+                      <option data-group="Faculty Of Science" value="Mathematics">Mathematics</option>
+                      <option data-group="Faculty Of Science" value="Applied Mathematics">Applied Mathematics</option>
+                      <option data-group="Faculty Of Science" value="Physics">Physics</option>
+                      <option data-group="Faculty Of Science" value="Pharmacy">Pharmacy</option>
+                      <option data-group="Faculty Of Science" value="Quantitative Finance">Quantitative Finance</option>
+                      <option data-group="Faculty Of Science" value="Statistics">Statistics</option>
+                      <option data-group="Faculty Of Law" value="No Major">No Major</option>
+                      <option data-group="Medicine" value="M.B.B.S.">M.B.B.S.</option>
+                      <option data-group="Medicine" value="Nursing">Nursing</option>
                       <option data-group='Faculty Of Engineering' value='Biomedical Engineering'>Biomedical Engineering</option>
                       <option data-group='Faculty Of Engineering' value='Chemical and Biomolecular Engineering'>Chemical & Biomolecular Engineering</option>
                       <option data-group='Faculty Of Engineering' value='Environmental Engineering'>Environmental Engineering</option>
@@ -174,19 +175,19 @@
                       <option data-group='Faculty Of Arts And Social Science' value='Social Sciences'>Social Sciences </option>
                       <option data-group='Faculty Of Arts And Social Science' value='Multidisciplinary'>Multidisciplinary</option>
                     </select><br>
-                    <select id = 'Specialization'>
-                      <option data-group='Specialization' value='0'>---------------------- Specialization ----------------------</option>
-                      <option data-group='Computer Science' value="No Specialization">No Specialization</option>
-                      <option data-group='Computer Science' value="Analysis Of Alogorithm">Analysis Of Alogorithm</option>
-                      <option data-group='Computer Science' value="Software Engineering">Software Engineering</option>
-                      <option data-group='Computer Science' value="Programming Languages">Programming Languages</option>
-                      <option data-group='Computer Science' value="Computer Security">Computer Security</option>
-                      <option data-group='Computer Science' value="Database">Database</option>
-                      <option data-group='Computer Science' value="Artificial Intelligence">Artificial Intelligence</option>
-                      <option data-group='Computer Science' value="Networking">Networking</option>
-                      <option data-group='Computer Science' value="Computer Graphics and Games">Computer Graphics and Games</option>
-                      <option data-group='Computer Science' value="Multimedia Information Retrieval">Multimedia Information Retrieval</option>
-                      <option data-group='Computer Science' value="Parallel Computing">Parallel Computing</option>
+                    <select id = "Specialization" name = "Specialization">
+                      <option data-group="Specialization" value= "select">---------------------- Specialization ----------------------</option>
+                      <option data-group="Computer Science" value="No Specialization">No Specialization</option>
+                      <option data-group= "Computer Science" value="Analysis Of Alogorithm">Analysis Of Alogorithm</option>
+                      <option data-group= "Computer Science" value="Software Engineering">Software Engineering</option>
+                      <option data-group= "Computer Science" value="Programming Languages">Programming Languages</option>
+                      <option data-group="Computer Science" value="Computer Security">Computer Security</option>
+                      <option data-group= "Computer Science" value="Database">Database</option>
+                      <option data-group= "Computer Science" value="Artificial Intelligence">Artificial Intelligence</option>
+                      <option data-group="Computer Science" value="Networking">Networking</option>
+                      <option data-group="Computer Science" value="Computer Graphics and Games">Computer Graphics and Games</option>
+                      <option data-group="Computer Science" value="Multimedia Information Retrieval">Multimedia Information Retrieval</option>
+                      <option data-group="Computer Science" value="Parallel Computing">Parallel Computing</option>
                       <option data-group='Information Systems' value="No specialization">No specialization</option>
                       <option data-group='Business Analytics' value="No specialization">No specialization</option>
                       <option data-group='Information Security' value="No specialization">No specialization</option>
@@ -286,6 +287,8 @@
                       <option data-group='Management'  value="No Specialization">No Specialization</option>
                       <option data-group='Management'  value="No Specialization">No Specialization</option>
                     </select><br>
+
+                    
                     <!--<div class="form-input">
                         <label for="tags"></label>
                         <input id="tags" type="text" name="username" placeholder="Enter Faculty">
@@ -300,6 +303,7 @@
                     </div>-->
                     <input type="submit" name="submit" value="NEXT" class="btn-login"><br>
                 </form>
+                
                 <!--<input type="text" id="input1" />
                 <button onclick="myJsFunction()"></button>
                 <script type="text/javascript">
@@ -315,9 +319,7 @@
                 <!--<input type="submit" name="submit" value="NEXT" class="btn-login"><br>-->
                 
                     <!--<button onclick="pg2.html">Next</button>-->
-                </div>
-            </div>
-        </div>
+        </div></div></div>
         <div id="footer"></div>
     </div>
 </body>

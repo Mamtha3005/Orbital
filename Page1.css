@@ -52,7 +52,7 @@ body{
     background-color: rgba(52,73,94,0.7);
     border-radius: 4px;
     margin-top: 150px; /*supp to be 150 but backgrd:( */ 
-    margin-left: 375px;
+    margin-left: 100px;
     padding-top: 50px;
 }
 input[type="text"], input[type="password"] {
