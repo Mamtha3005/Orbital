@@ -22,6 +22,7 @@
                 <li> <a href="newcontactpg.html">Contact</a></li> </center>
             </ul>
         </div>
+<!--
         <div id="bluebox">
             <h1>Uncompleted Modules</h1>
             <p>UE: 20 MCs</p>
@@ -130,7 +131,24 @@
                     </tr>
             </table>
         </div>
+-->
         <div id="footer"></div>
     </div>
+    Faculty: <?php echo $_POST["Faculty"]?><br/>
+    Major: <?php echo $_POST["Majors"] ?><br/>
+    Specialization: <?php echo $_POST["Specialization"] ?><br/>
+    <br/>
+    <?php
+    if(isset($_POST['submit'])){
+        if(!empty($_POST['Color'])) {
+            echo "<span>You have selected :</span><br/>";
+        // As output of $_POST['Color'] is an array we have to use Foreach Loop to display individual value
+            foreach ($_POST['Color'] as $select){
+                echo "<span><b>".$select."</b></span><br/>";
+            }
+        }
+        else { echo "<span>Please Select Atleast One completed module..</span><br/>";}
+    }
+    ?>
 </body>
 </html>

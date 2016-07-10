@@ -90,12 +90,27 @@
                 <li> <a href="newcontactpg.html">Contact</a></li> </center>
             </ul>
         </div></div>
-        
+    <?php
+    if($_POST["Faculty"] == "select")
+        echo "Please go back to the preious page to choose a faculty.<br/>";
+    if($_POST["Majors"] == "select")
+        echo "Please go back to the preious page to choose a major.<br/>";
+    if($_POST["Specialization"] == "select")
+        echo "Please go back to the preious page to choose a specialization.<br/>";
+    ?>
         <div class="container">
         <div class="main">
             <h2> Completed Modules</h2>
-            <form action="select_value.php" method="post">
-
+            <form action="pg3.php" method="post">
+                <select id = "Faculty" name = "Faculty" >
+                      <option value= "<?php echo $_POST["Faculty"]?>"><?php echo $_POST["Faculty"]?></option>
+                </select><br>
+                <select id = "Majors" name = "Majors" >
+                      <option value= "<?php echo $_POST["Majors"]?>"><?php echo $_POST["Majors"]?></option>
+                </select><br>                
+                <select id = "Specialization" name = "Specialization" >
+                      <option value= "<?php echo $_POST["Specialization"]?>"><?php echo $_POST["Specialization"]?></option>
+                </select><br>
                     <!----- Select Option Fields Starts Here ----->
                     <label class="heading">To Select Completed Modules Press ctrl+left click :</label>
                     <select multiple name="Color[]">
