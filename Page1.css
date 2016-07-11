@@ -7,10 +7,6 @@ body{
      -moz-background-size: cover;
      -o-background-size: cover;
       background-size: cover;
-     /*background-image: url("http://i.imgur.com/Bp04i9Y.jpg");
-     background-repeat: no-repeat;
-     background-size: 100% 720px;
-     background-position: center;*/
 }
 #container{
     width: auto;  /*generally 800px*/
@@ -22,14 +18,9 @@ body{
 #header{
     height:150px;
     background-color: none;
-    font-family:cursive;
     font-size: 120px;
+    padding-left: 30px;
 }
-#menu{
-    height:60px;
-    background-color: #1abc9c;
-}
-
 #mainbody{
     background-image:none;
     background-repeat: no-repeat;
@@ -42,50 +33,79 @@ body{
     height:100px;
     margin-bottom: 21px;
     background-color:none;
-    clear:both; clear /*the floating mainbody&sidebar*/
+    clear:both; clear the floating mainbody&sidebar
 }
 #bluebox{
-    width: 500px;
+    width: 530px;
     height: 400px;
     text-align: center;
     margin:0 auto;
     background-color: rgba(52,73,94,0.7);
     border-radius: 4px;
     margin-top: 150px; /*supp to be 150 but backgrd:( */ 
-    margin-left: 400px;
+    margin-left: 375px;
     padding-top: 50px;
 }
-input[type="text"], input[type="password"] {
+#Faculty{
     height: 45px;
-    width: 300px;
+    width: 340px;
     font-size: 18px;
     margin-bottom: 40px;
     background-color: #fff;
-    padding-left: 40px;
+    padding-left: 0px;
     border-radius: 4px;
     border: none;
-}
-#btn-login{
-    padding: 15px 30px;
-    color: #fff;
-    border: none;
+    text-align-last:center;
+    cursor:pointer;
+ }
+#Majors{
+    height: 45px;
+    width: 390px;
+    font-size: 18px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding-left:0px;
     border-radius: 4px;
-    background-color: #2ecc71;
-    border-bottom: 4px solid #27ae60;
-    margin-bottom: 20px;
+    border: none;
+    text-align-last:center;
     cursor:pointer;
 }
-#bluebox2{
+#Specialization{
+    height: 45px;
     width: 500px;
-    height: 570px;
-    text-align: center;
-    margin:0 auto;
-    background-color: rgba(52,73,94,0.7);
-    border-radius: 8px;
-    margin-top: 150px; /*supp to be 150 but backgrd:( */ 
-    margin-left: 375px;
-    padding-top: 40px;
+    font-size: 18px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding-left:0px;
+    border-radius: 4px;
+    border: none;
+    text-align-last:center;
+    cursor:pointer;
+}
+#next{
+    padding: 15px 30px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background-color: #1e434d;
+    border-bottom: 4px solid #102328;
+    margin-bottom: 20px;
+    cursor:pointer;
+    font-size: 18px;
 }
 .info{
     font-size: 30px;
+}
+#next{
+    padding: 15px 30px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background-color: #1e434d;
+    border-bottom: 4px solid #102328;
+    margin-bottom: 20px;
+    cursor:pointer;
+    font-size: 18px;
 }
