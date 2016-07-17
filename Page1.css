@@ -33,7 +33,8 @@ body{
     height:100px;
     margin-bottom: 21px;
     background-color:none;
-    clear:both; clear the floating mainbody&sidebar
+    clear:both; 
+/*    clear the floating mainbody&sidebar*/
 }
 #bluebox{
     width: 530px;
@@ -51,7 +52,7 @@ body{
     width: 340px;
     font-size: 18px;
     margin-bottom: 40px;
-    background-color: #fff;
+    background-color:rgba(187,255,255,0.7);
     padding-left: 0px;
     border-radius: 4px;
     border: none;
@@ -63,7 +64,7 @@ body{
     width: 390px;
     font-size: 18px;
     margin-bottom: 40px;
-    background-color: #fff;
+    background-color:rgba(187,255,255,0.7);
     padding-left:0px;
     border-radius: 4px;
     border: none;
@@ -75,7 +76,7 @@ body{
     width: 500px;
     font-size: 18px;
     margin-bottom: 40px;
-    background-color: #fff;
+    background-color:rgba(187,255,255,0.7);
     padding-left:0px;
     border-radius: 4px;
     border: none;
@@ -96,16 +97,4 @@ body{
 }
 .info{
     font-size: 30px;
-}
-#next{
-    padding: 15px 30px;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    border-radius: 4px;
-    background-color: #1e434d;
-    border-bottom: 4px solid #102328;
-    margin-bottom: 20px;
-    cursor:pointer;
-    font-size: 18px;
 }
