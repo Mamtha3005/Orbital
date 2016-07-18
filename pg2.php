@@ -90,14 +90,26 @@
                 <li> <a href="newcontactpg.html">Contact</a></li> </center>
             </ul>
         </div></div>
-    <?php
-    if($_POST["Faculty"] == "select")
-        echo "Please go back to the preious page to choose a faculty.<br/>";
-    if($_POST["Majors"] == "select")
-        echo "Please go back to the preious page to choose a major.<br/>";
-    if($_POST["Specialization"] == "select")
-        echo "Please go back to the preious page to choose a specialization.<br/>";
-    ?>
+    
+<!--
+    <div id="warning">
+            <?php
+            if($_POST["Faculty"] == "select"){
+                $message1= "Please go back to the previous page to choose a faculty.";
+                echo "<script type='text/javascript'>alert('$message1');</script>";
+//                echo "<a href=\"javascript:history.go(-1)\">GO BACK</a>";
+            }        
+            if($_POST["Majors"] == "select"){
+                $message2= "Please go back to the previous page to choose a major.";
+//                echo "<script type='text/javascript'>alert('$message2');</script>";
+            }
+            if($_POST["Specialization"] == "select"){
+                $message3= "Please go back to the previous page to choose a specialization.";
+//                echo "<script type='text/javascript'>alert('$message3');</script>";
+            }
+            ?>  
+    </div>  
+-->
     
         <form action="pg3.php" method="post">
             <div id = "dropBox">
@@ -115,8 +127,9 @@
             <div class="container">
             <div class="main">
                     <!----- Select Option Fields Starts Here ----->
-                    <label class="heading">To Select Completed Modules Press ctrl+left click :<br></label>
-                    <select multiple name="Color[]" id = "options">
+                    <label class="heading">Please select all completed and exempted modules.<br></label>
+                <label class="heading">To Select Multiple Modules Press ctrl+left click:<br></label>
+                    <select multiple name="Color[]" id = "options" required>
                          <option value="AlvlMath">A level Mathematics</option>
                         <option value="AlvlPhy">A level Physics</option>
                         <option value="CM1101">CM1101 Principles of Modern Chemistry</option>
@@ -322,6 +335,7 @@
                         <option value="GET1035">GET1035 Critical Perspectives in Advertising</option>
                         <option value="GET1036">GET1036 The Logic of Language</option>
                         <option value="IS1103/FC">IS1103/FC Computing and Society</option>
+                        <option value="IS1105">IS1105 Strategic IT Applications</option>
                         <option value="IS4010">IS4010 Industry Internship Programme</option>
                         <option value="LSM1301">LSM1301 General Biology</option>
                         <option value="LSM1302">LSM1302 Genes and Society</option>

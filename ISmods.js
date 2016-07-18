@@ -1,0 +1,1 @@
+var IS1105={code:"IS1105", name:"IS1105 Strategic IT Applications",type:"IS_core", mc: 4, key: false};           

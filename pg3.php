@@ -31,7 +31,7 @@
             <br/>
             <?php
                 if(isset($_POST['submit'])){
-                    if(!empty($_POST['Color'])) {
+                    if($_POST['Color']) {
                         echo "<span>Completed Modules :</span><br/>";
                         $count = 0;
                         $taken = array();
@@ -41,7 +41,9 @@
                             $count = $count + 1;
                         }
                     }
-                    else { echo "<span>Please Select Atleast One completed module..</span><br/>";
+                    else { 
+                        $message="Please select at least one completed module.";
+                        echo "<script type='text/javascript'> alert('$message');</script>";
                     }
                     
                 }
@@ -176,6 +178,7 @@
                 var gemCount = 0;
                 var sciCount = 0;
                 var UEcount = 20;
+                var stCount = "";
                 for(var j=0;j<jArray.length;j++){
                     for(var i=0;i<allMods.length;i++){
                         if(jArray[j]==allMods[i].code){
@@ -195,6 +198,28 @@
                                 numModules-=1;
                                 document.write("UE Count aft AlvlPhy: " +UEcount);
                                 AlvlPhy.key = true;
+                            }
+                            if(jArray[j] == "ST2334"){
+                                ST2131.key = true;
+                                ST2132.key = true;
+                                stCount = "ST2334";
+                                /*UEcount+=4;*/
+//                                numModules+=1;
+//                                document.write("UE Count aft AlvlMath: " +UEcount);
+                            }
+                            if(jArray[j] == "ST2132"){
+                                ST2334.key = true;
+                                stCount = "ST2132";
+                                /*UEcount+=4;*/
+//                                numModules+=1;
+//                                document.write("UE Count aft AlvlMath: " +UEcount);
+                            }
+                            if(jArray[j] == "ST2131"){
+                                ST2334.key = true;
+                                stCount = "ST2131";
+                                /*UEcount+=4;*/
+//                                numModules+=1;
+//                                document.write("UE Count aft AlvlMath: " +UEcount);
                             }
                         }
                         
@@ -267,16 +292,17 @@
                 }
                 
                 //Math&Sci Modules
-                var mathSciComp = [MA1101R, MA1301_FC_X, MA1521, PC1221, PC1222,  ST2131, ST2132, ST2334];
+                var mathSciComp = [MA1101R, MA1301_FC_X, MA1521, PC1221, PC1222];
+                var stats = [ST2131, ST2132, ST2334];
                 var mathS1S2 = [CM1101, CM1111, CM1121, CM1131, CM1161, CM1191, CM1401, CM1402, CM1417, CM1501, CM1502, MA1104, MA2101, MA2108, MA2213, MA2214, MA2501, PC1141, PC1142, PC1143, PC1144, PC1421, PC1431, PC1432, PC1433, ST2137];
                 
                 var user_mathSciComp = new Array();
                 var sciCount = 0;
                 for(var i=0;i<mathSciComp.length;i++){
-                   if(mathSciComp[i].key==false){
+                   if(mathSciComp[i].key==false)
                        user_mathSciComp.push(mathSciComp[i].code);
-                    }
-                    else//taken
+                
+                    if(mathSciComp[i].key==true)//taken
                         numModules+=1;
                 };
                 for(var i=0;i<mathS1S2.length;i++){
@@ -284,6 +310,18 @@
                        sciCount++;
                     }
                 };
+                if(stCount == "ST2334"){
+                    numModules +=1;
+                }
+                else if(stCount == "ST2131"){
+                    numModules +=1;
+                    user_mathSciComp.push("ST2132");
+                }
+                else if(stCount == "ST2132"){
+                    numModules +=2;
+                }
+                else
+                    user_mathSciComp.push("ST2334 or ST2131 + ST2132");
                 if(mathSciComp.length == 0)
                     mathSciComp[0] = "";
 //                document.write("Math and Science Modules" + "<br/>");
@@ -300,7 +338,7 @@
                 else if(sciCount<4){
                     numModules+= sciCount;
                 }
-                if(ST2334.key == true){
+                if(ST2334.key == true && stCount == "ST2334"){
                     if(sciCount == 0){
 //                        document.write("3 science modules required" + "<br>");
                         user_mathSciComp.push("3 science modules required");
@@ -314,7 +352,7 @@
                         user_mathSciComp.push("1 science module required");
                     }
                 }
-                if(ST2131.key == true){
+                if(ST2131.key == true &&(stCount == "ST2131" || stCount == "ST2132")){
                     if(sciCount == 0){
 //                        document.write("2 science modules required" + "<br>");
                         user_mathSciComp.push("2 science modules required");
@@ -1105,7 +1143,7 @@
                 UEcount = UEcount - 4 * (jArray.length - numModules);
                 document.write("UE: "+ UEcount  + " modular credits" + "<br>");
                 document.write("NumModules(excluding UE): "+ numModules + "<br>");
-                document.write("Completed Modulles: "+ jArray.length + "<br>");
+                document.write("Completed Modules: "+ jArray.length + "<br>");
                 </script>
                 
             <div id='wherever'>Wow</div> 
