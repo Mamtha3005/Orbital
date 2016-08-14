@@ -33,12 +33,11 @@ body{
     height:100px;
     margin-bottom: 21px;
     background-color:none;
-    clear:both; 
-/*    clear the floating mainbody&sidebar*/
+    clear:both; clear the floating mainbody&sidebar
 }
 #bluebox{
     width: 530px;
-    height: 400px;
+    height: 330px;
     text-align: center;
     margin:0 auto;
     background-color: rgba(52,73,94,0.7);
@@ -46,6 +45,7 @@ body{
     margin-top: 150px; /*supp to be 150 but backgrd:( */ 
     margin-left: 375px;
     padding-top: 50px;
+    margin-left:370px;
 }
 #Faculty{
     height: 45px;
@@ -91,9 +91,10 @@ body{
     border-radius: 4px;
     background-color: #1e434d;
     border-bottom: 4px solid #102328;
-    margin-bottom: 20px;
     cursor:pointer;
     font-size: 18px;
+    margin-left:-5px;
+    margin-top:-10px;
 }
 .info{
     font-size: 30px;

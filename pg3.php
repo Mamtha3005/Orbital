@@ -25,18 +25,20 @@
 
         <div id="things">
         <div id="completedMods">
+<!--
             Faculty: <?php echo $_POST["Faculty"] ?><br/>
             Major: <?php echo $_POST["Majors"] ?><br/>
             Specialization: <?php echo $_POST["Specialization"] ?><br/>
             <br/>
+-->
             <?php
                 if(isset($_POST['submit'])){
                     if($_POST['Color']) {
-                        echo "<span>Completed Modules :</span><br/>";
+//                        echo "<span>Completed Modules :</span><br/>";
                         $count = 0;
                         $taken = array();
                         foreach ($_POST['Color'] as $select){
-                            echo "$select <br>" ;
+//                            echo "$select <br>" ;
                             $taken[$count]= $select;
                             $count = $count + 1;
                         }
@@ -52,11 +54,25 @@
                 var jArray= <?php echo json_encode($taken); ?>;
             </script>
         </div>
-        <div id="uncompletedMods">
-            
+        <div id="bluebox">
+            <h1>Uncompleted Modules</h1>
+            <p>
             <script>
+                var ACC1002X={code:"ACC1002X", name:"ACC1002X Financial Accounting",type:"ue", mc: 4, key: false};
                 var AlvlMath={code:"AlvlMath", name:"A Level Mathematics",type:"math&sci", mc: 4, key: false};
-                var AlvlPhy={code:"AlvlPhy", name:"A Level Physics", mc:4, type:"math&sci", key:"false"}
+                var AlvlPhy={code:"AlvlPhy", name:"A Level Physics", mc:4, type:"math&sci", key:"false"};
+                var BT1101={code:"BT1101", name:"BT1101 Introduction to Business Analytics",type:"ue", mc: 4, key: false};
+                var BT2101={code:"BT2101", name:"BT2101 IT and Decision Making",type:"ue", mc: 4, key: false};
+                var BT2102={code:"BT2102", name:"BT2102 Data Management and Visualisation",type:"ue", mc: 4, key: false};
+                var BT3101={code:"BT3101", name:"BT3101 Business Analytics Capstone Project",type:"ue", mc: 4, key: false};
+                var BT3102={code:"BT3102", name:"BT3102 Computational Methods for Business Analytics",type:"ue", mc: 4, key: false};
+                var BT3103={code:"BT3103", name:"BT3103 Application Systems Development for Business Analytics",type:"ue", mc: 4, key: false};
+                var CG1001={code:"CG1001", name:"CG1001 Introduction to Computer Engineering",type:"ue", mc: 4, key: false};
+                var CG1108={code:"CG1108", name:"CG1108 Electrical Engineering",type:"ue", mc: 4, key: false};
+                var CG2023={code:"CG2023", name:"CG2023 Signals & Systems",type:"ue", mc: 4, key: false};
+                var CG2271={code:"CG2271", name:"CG2271 Real-time Operating Systems",type:"ue", mc: 4, key: false};
+                var CG3002={code:"CG3002", name:"CG3002 Embedded Systems Design Project",type:"ue", mc: 6, key: false};
+                var CG3207={code:"CG3207", name:"CG3207 Computer Architecture",type:"ue", mc: 4, key: false};
                 var CM1101={code:"CM1101", name: "CM1101 Principles of Modern Chemistry",type:"math&sci", mc: 4, key: false};
                 var CM1111={code:"CM1111", name: "CM1111 Inorganic Chemistry 1",type:"math&sci", mc: 4, key: false};
                 var CM1121={code:"CM1121", name: "CM1121 Organic Chemistry I",type:"math&sci", mc: 4, key: false};
@@ -89,6 +105,7 @@
                 var CS2108={code:"CS2108", name:"CS2108 Introduction to Media Computing", type: "mir", mc: 4, key: false};
                 var CS3103={code:"CS3103", name:"CS3103 Computer Networks Practice", type: "nds", mc: 4, key: false};
                 var CS3201_CS3202={code:"CS3201+CS3202", name: "CS3201 Software Engineering Project I and CS3202 Software Engineering Project II",type:"b&d_teamPrj", mc: 8, key: false};
+                var CS3205={code:"CS3205", name:"CS3205 Information Security Capstone Project",type:"ue", mc: 4, key: false};
                 var CS3210={code:"CS3210", name: "CS3210 Parallel Computing", type: "pc", mc: 4, key: false};
                 var CS3211_pc={code:"CS3211_pc", name: "CS3211 Parallel and Concurrent Programming", type: "pc", mc: 4, key: false};
                 var CS3211_pl={code:"CS3211_pl", name:"CS3211 Parallel and Concurrent Programming", type: "pl", mc: 4, key: false};
@@ -128,24 +145,59 @@
                 var CS4248={code:"CS4248", name:"CS4248 Natural Language Processing", type: "mir", mc: 4, key: false};
                 var CS4274={code:"CS4274", name: "CS4274 Mobile and Multimedia Networking", type: "nds", mc: 4, key: false};
                 var CS4350={code:"CS4350", name:"CS4350 Game Development Projects", type: "CGG", mc: 4, key: false};
+                var DSC3214={code:"DSC3214", name:"DSC3214 Introduction To Optimisation",type:"ue", mc: 4, key: false};
+                var DSC3216={code:"DSC3216", name:"DSC3216 Forecasting for Managerial Decisions",type:"ue", mc: 4, key: false};
+                var DSC3224={code:"DSC3224", name:"DSC3224 Dynamic Pricing and Revenue Management",type:"ue", mc: 4, key: false};
+                var EC1301={code:"EC1301", name:"EC1301 Principles of Economics",type:"ue", mc: 4, key: false};
+                var EE2020={code:"EE2020", name:"EE2020 Digital Fundamentals",type:"ue", mc: 4, key: false};
+                var EE2021={code:"EE2021", name:"EE2021 Devices & Circuits",type:"ue", mc: 4, key: false};
+                var EE2024={code:"EE2024", name:"EE2024 Programming for Computer Interfaces",type:"ue", mc: 4, key: false};
+                var EE3031={code:"EE3031", name:"EE3031 Innovation & Enterprise I",type:"ue", mc: 4, key: false};
+                var EE3204={code:"EE3204", name:"EE3204 Computer Communications Networks I",type:"ue", mc: 4, key: false};
+                var EG2401={code:"EG2401", name:"EG2401 Engineering Professionalism",type:"ue", mc: 4, key: false};
+                var EG3601={code:"EG3601", name:"EG3601 Industrial Attachment Programme",type:"ue", mc: 4, key: false};
+                var ES2660={code:"ES2660", name:"ES2660 Communicating in the Information Age",type:"ue", mc: 4, key: false};
                 var GEH={code:"GEH", name:"GEH Human Cultures pillar", type:"GEM", mc:4, key:false};
                 var GER={code:"GER", name:"GER Quantitative Reasoning pillar", type:"GEM", mc:4, key:false};
                 var GES={code:"GES", name:"GES Singapore Studies pillar", type:"GEM", mc:4, key:false};
                 var GET={code:"GET", name:"GET Thinking and Expression pillar", type:"GEM", mc:4, key:false};
+                var HR2002={code:"HR2002", name:"HR2002 Human Capital in Organizations",type:"ue", mc: 4, key: false};
+                var IE2110={code:"IE2110", name:"IE2110 Operations Research I",type:"ue", mc: 4, key: false};
+                var IE3120={code:"IE3120", name:"IE3120 Manufacturing Logistics",type:"ue", mc: 4, key: false};
                 var IS1103_FC={code:"IS1103/FC", name:"IS1103/FC Computing and Society",type:"IT", mc: 4, key: false};
+                var IS1105={code:"IS1105", name:"IS1105 Strategic IT Applications",type:"ue", mc: 4, key: false};
+                var IS1112_FC_X={code:"IS1112/FC/X", name:"IS1112/FC/X E-Business Essentials",type:"ue", mc: 4, key: false};  
+                var IS2101={code:"IS2101", name:"IS2101 Business and Technical Communication",type:"ue", mc: 4, key: false};          var IS2102={code:"IS2102", name:"IS2102 Requirements Analysis and Design",type:"ue", mc: 4, key: false};           
+                var IS2103={code:"IS2103", name:"IS2103  Enterprise Systems Development Concepts",type:"ue", mc: 4, key: false};     var IS2104={code:"IS2104", name:"IS2104 Software Team Dynamics",type:"ue", mc: 4, key: false};           
+                var IS2150={code:"IS2150", name:"IS2150 E-Business Design and Implementation",type:"ue", mc: 4, key: false};         var IS3101={code:"IS3101", name:"IS3101 Management of Information Systems",type:"ue", mc: 4, key: false};           
+                var IS3102={code:"IS3102", name:"IS3102 Information Systems Development Project",type:"ue", mc: 4, key: false};       var IS3150={code:"IS3150", name:"IS3150 Digital and New Media Marketing",type:"ue", mc: 4, key: false};           
+                var IS3220={code:"IS3220", name:"IS3220 Service Science",type:"ue", mc: 4, key: false};           
+                var IS3221={code:"IS3221", name:"IS3221 Enterprise Resource Planning Systems",type:"ue", mc: 4, key: false};         var IS3222={code:"IS3222", name:"IS3222 IT and Customer Relationship Management",type:"ue", mc: 4, key: false};       var IS3223={code:"IS3223", name:"IS3223 IT and Supply Chain Management",type:"ue", mc: 4, key: false};           
+                var IS3230={code:"IS3230", name:"IS3230 Principles of Information Security",type:"ue", mc: 4, key: false};           
+                var IS3240={code:"IS3240", name:"IS3240 Economics of E-Business",type:"ue", mc: 4, key: false};           
+                var IS3241={code:"IS3241", name:"IS3241 Enterprise Social Systems",type:"ue", mc: 4, key: false};           
+                var IS3242={code:"IS3242", name:"IS3242 Software Quality Management",type:"ue", mc: 4, key: false};           
+                var IS3243={code:"IS3243", name:"IS3243 Technology Strategy and Management",type:"ue", mc: 4, key: false};           
+                var IS3250={code:"IS3250", name:"IS3250  Health Informatics",type:"ue", mc: 4, key: false};           
+                var IS3251={code:"IS3251", name:"IS3251 Principles of Technology Entrepreneurship",type:"ue", mc: 4, key: false};     var IS3260={code:"IS3260", name:"IS3260_Gamification for Organisations and Individuals",type:"ue", mc: 4, key: false};           
+                var IS3261={code:"IS3261", name:"IS3261_Mobile Apps for Enterprise",type:"ue", mc: 4, key: false};           
                 var IS4010={code: "IS4010", name: "IS4010 Industry Internship Programme", type: "IE", mc: 12, key: false};
                 var LSM1301={code:"LSM1301", name: "LSM1301 General Biology",type:"math&sci", mc: 4, key: false};
                 var LSM1302={code:"LSM1302", name: "LSM1302 Genes and Society",type:"math&sci", mc: 4, key: false};
                 var LSM1303={code:"LSM1303", name: "LSM1303 Animal Behaviour",type:"math&sci", mc: 4, key: false};
                 var MA1101R={code:"MA1101R", name:"MA1101R Linear Algebra I",type:"math&sci", mc: 4, key: false};
+                var MA1102R={code:"MA1102R", name:"MA1102R Calculus",type:"ue", mc: 4, key: false};
                 var MA1104={code:"MA1104", name:"MA1104 Multivariable Calculus",type:"math&sci", mc: 4, key: false};
                 var MA1301_FC_X={code:"MA1301/FC/X", name:"MA1301/FC/X Introductory Mathematics",type:"math&sci", mc: 4, key: false};
+                var MA1505={code:"MA1505", name:"MA1505 Mathematics I",type:"ue", mc: 4, key: false};
+                var MA1506={code:"MA1506", name:"MA1506 Mathematics II",type:"ue", mc: 4, key: false};
                 var MA1521={code:"MA1521", name:"MA1521 Calculus for Computing",type:"math&sci", mc: 4, key: false};
                 var MA2101={code:"MA2101", name:"MA2101 Linear Algebra II",type:"math&sci", mc: 4, key: false};
                 var MA2108={code:"MA2108", name:"MA2108 Mathematical Analysis I",type:"math&sci", mc: 4, key: false};
                 var MA2213={code:"MA2213", name: "MA2213 Numerical Analysis I",type:"math&sci", mc: 4, key: false};
                 var MA2214={code:"MA2214", name: "MA2214 Combinatorics and Graph",type:"math&sci", mc: 4, key: false};
                 var MA2501={code:"MA2501", name: "MA2501 Differential Equations and Systems",type:"math&sci", mc: 4, key: false};
+                var MKT1003X={code:"MKT1003X", name:"MKT1003X Marketing",type:"ue", mc: 4, key: false};
                 var NOC_iLead={code:"NOC/iLead", name:"NOC or iLead", type: "IE", mc: 12, key: false};
                 var PC1141={code:"PC1141", name: "PC1141 Physics I Introduction to Classical Mechanics",type:"math&sci", mc: 4, key: false};
                 var PC1142={code:"PC1142", name: "PC1142 Physics II Introduction to Thermodynamics and Optics",type:"math&sci", mc: 4, key: false};
@@ -161,18 +213,9 @@
                 var ST2132={code:"ST2132", name: "ST2132 Mathematical Statistics",type:"math&sci", mc: 4, key: false};
                 var ST2137={code:"ST2137", name:"ST2137 Computer Aided Data Analysis",type:"math&sci", mc: 4, key: false};
                 var ST2334={code:"ST2334", name:"ST2334 Probability and Statistics",type:"math&sci", mc: 4, key: false};
-
+                var ST3131={code:"ST3131", name:"ST3131 Regression Analysis",type:"ue", mc: 4, key: false};
                 
-//                var modarr=[CS1010,CS1020,CS1231];       
-   
-//                for(var j=0;j<jArray.length;j++){
-//                    for(var i=0;i<3;i++){
-//                        if(modarr[i].name===jArray[j]){
-//                            modarr[i].key=true;
-//                        }
-//                    }
-//                };
-                var allMods=[AlvlMath, AlvlPhy, CM1101, CM1111, CM1121, CM1131, CM1161, CM1191, CM1401, CM1402, CM1417, CM1501, CM1502, CP3200_CP3202, CP3200_IndustryCourse, CP3880, CP4101, CS1010, CS1020, CS1101S, CS1231, CS2010, CS2100, CS2101, CS2102, CS2103, CS2103T, CS2104, CS2105, CS2106, CS2107, CS2108, CS3103, CS3201_CS3202, CS3210, CS3211_pc, CS3211_pl, CS3213, CS3216_CS3217, CS3223, CS3230, CS3235, CS3236, CS3241, CS3242, CS3243, CS3244, CS3245, CS3247, CS3281_CS3282, CS3283_CS3284, CS4211, CS4212, CS4215, CS4218, CS4221, CS4222, CS4223, CS4224, CS4226, CS4231_at, CS4231_pc, CS4232, CS4234, CS4236, CS4238, CS4242, CS4244, CS4246, CS4247, CS4248, CS4274, CS4350, IS1103_FC, IS4010, LSM1301, LSM1302, LSM1303, MA1101R, MA1104, MA1301_FC_X, MA1521, MA2101, MA2108, MA2213, MA2214, MA2501, NOC_iLead, PC1141, PC1142, PC1143, PC1144, PC1221, PC1222, PC1421, PC1431, PC1432, PC1433, ST2131, ST2132, ST2137, ST2334];
+                var allMods=[ACC1002X, AlvlMath, AlvlPhy, BT1101, BT2101, BT2102, BT3101, BT3102, BT3103, CG1001, CG1108, CG2023, CG2271, CG3002, CG3207, CM1101, CM1111, CM1121, CM1131, CM1161, CM1191, CM1401, CM1402, CM1417, CM1501, CM1502, CP3200_CP3202, CP3200_IndustryCourse, CP3880, CP4101, CS1010, CS1020, CS1101S, CS1231, CS2010, CS2100, CS2101, CS2102, CS2103, CS2103T, CS2104, CS2105, CS2106, CS2107, CS2108, CS3103, CS3201_CS3202, CS3205, CS3210, CS3211_pc, CS3211_pl, CS3213, CS3216_CS3217, CS3223, CS3230, CS3235, CS3236, CS3241, CS3242, CS3243, CS3244, CS3245, CS3247, CS3281_CS3282, CS3283_CS3284, CS4211, CS4212, CS4215, CS4218, CS4221, CS4222, CS4223, CS4224, CS4226, CS4231_at, CS4231_pc, CS4232, CS4234, CS4236, CS4238, CS4242, CS4244, CS4246, CS4247, CS4248, CS4274, CS4350, DSC3214, DSC3216, DSC3224, EC1301, EE2020, EE2021, EE2024, EE3031, EE3204, EG2401, EG3601, ES2660, GEH, GER, GES, GET, HR2002, IE2110, IE3120, IS1103_FC, IS1105, IS1112_FC_X, IS2101, IS2102, IS2103, IS2104, IS2150, IS3101, IS3102, IS3150, IS3220, IS3221, IS3222, IS3223, IS3230, IS3240, IS3241, IS3242, IS3243, IS3250, IS3251, IS3260, IS3261, IS4010, LSM1301, LSM1302, LSM1303, MA1101R, MA1102R, MA1104, MA1301_FC_X, MA1505, MA1506, MA1521, MA2101, MA2108, MA2213, MA2214, MA2501, MKT1003X, NOC_iLead, PC1141, PC1142, PC1143, PC1144, PC1221, PC1222, PC1421, PC1431, PC1432, PC1433, ST2131, ST2132, ST2137, ST2334, ST3131];
                 
                 var numModules = 0;
                 var gemCount = 0;
@@ -187,8 +230,7 @@
                             if(jArray[j]== "AlvlMath"){
                                 MA1301_FC_X.key = true;
                                 UEcount+=4;
-//                                numModules+=1;
-                                document.write("UE Count aft AlvlMath: " +UEcount);
+                                numModules-=1;
                                 AlvlMath.key = true;
                             }
                             if(jArray[j]== "AlvlPhy"){
@@ -196,30 +238,20 @@
                                 PC1222.key = true;
                                 UEcount+=4;
                                 numModules-=1;
-                                document.write("UE Count aft AlvlPhy: " +UEcount);
                                 AlvlPhy.key = true;
                             }
                             if(jArray[j] == "ST2334"){
                                 ST2131.key = true;
                                 ST2132.key = true;
                                 stCount = "ST2334";
-                                /*UEcount+=4;*/
-//                                numModules+=1;
-//                                document.write("UE Count aft AlvlMath: " +UEcount);
                             }
                             if(jArray[j] == "ST2132"){
                                 ST2334.key = true;
                                 stCount = "ST2132";
-                                /*UEcount+=4;*/
-//                                numModules+=1;
-//                                document.write("UE Count aft AlvlMath: " +UEcount);
                             }
                             if(jArray[j] == "ST2131"){
                                 ST2334.key = true;
                                 stCount = "ST2131";
-                                /*UEcount+=4;*/
-//                                numModules+=1;
-//                                document.write("UE Count aft AlvlMath: " +UEcount);
                             }
                         }
                         
@@ -249,14 +281,9 @@
                             break;
                     }
                 }
-                document.write("Num Count aft gem: " +numModules + "<br>");    
+
                 var z = gemCount - 5;
-                if(z>0){
-//                    UEcount = UEcount - (z * 4);
-//                    numModules+=z;
-                    document.write("UE Count aft Gem: " +UEcount);
-                }
-                document.write("UnCompleted Modules: <br>");
+                
                 //CS Foundation
                 var cs_found=[CS1010, CS1020, CS1231, CS2010, CS2100, CS2103T, CS2105, CS2106, CS3230]; 
                 var user_cs_found = new Array();
@@ -267,12 +294,6 @@
                     else//taken
                         numModules+=1;
                 };
-                
-//                document.write( "CS Foundation Modules" + "<br/>");
-//                for(var i=0;i< user_cs_found.length;i++){
-//                    document.write(user_cs_found[i] + "<br>");
-//                }
-                document.write("Num Count aft CS foundation: " +numModules +"<br>");
                 //GEM Modules
                 var GEM=[GET, GER, GES, GEH]; 
                 var user_GEM = new Array();
@@ -281,6 +302,7 @@
                        user_GEM.push(GEM[i].code);
                     }
                 };
+                
                 if(user_GEM.length == 0)
                     user_GEM[0]= "";
                 document.write( "GEM Modules: ");
@@ -324,60 +346,44 @@
                     user_mathSciComp.push("ST2334 or ST2131 + ST2132");
                 if(mathSciComp.length == 0)
                     mathSciComp[0] = "";
-//                document.write("Math and Science Modules" + "<br/>");
-//                for(var i=0;i< user_mathSciComp.length;i++){
-//                    document.write(user_mathSciComp[i] + "<br>");
-//                }
                 if(sciCount>=4){
                     numModules+=3;
                     var w = sciCount - 3;
-                    if(w>0){
-//                        UEcount= UEcount - (4 * w);
-                    }
                 }
                 else if(sciCount<4){
                     numModules+= sciCount;
                 }
                 if(ST2334.key == true && stCount == "ST2334"){
                     if(sciCount == 0){
-//                        document.write("3 science modules required" + "<br>");
                         user_mathSciComp.push("3 science modules required");
                     }
                     if(sciCount == 1){
-//                        document.write("2 science modules required" + "<br>");
                         user_mathSciComp.push("2 science modules required");
                     }
                     if(sciCount == 2){
-//                        document.write("1 science modules required "+ "<br>");
                         user_mathSciComp.push("1 science module required");
                     }
                 }
                 if(ST2131.key == true &&(stCount == "ST2131" || stCount == "ST2132")){
                     if(sciCount == 0){
-//                        document.write("2 science modules required" + "<br>");
                         user_mathSciComp.push("2 science modules required");
                     }
                     if(sciCount == 1){
-//                        document.write("1 science modules required" + "<br>");
                         user_mathSciComp.push("1 science module required");
                     }
                 }
                 //not taken combined stats and separate stats
                 if(ST2334.key == false && ST2131.key == false){
                     if(sciCount == 0){
-//                        document.write("3 science modules required" + "<br>");
                         user_mathSciComp.push("3 science modules required");
                     }
                     if(sciCount == 1){
-//                        document.write("2 science modules required" + "<br>");
                         user_mathSciComp.push("2 science modules required");
                     }
                     if(sciCount == 2){
-//                        document.write("1 science modules required" + "<br>");
                         user_mathSciComp.push("1 science module required");
                     }
                 }
-                document.write("Num Count aft sci: " +numModules +"<br>");
                 //IT Proffesionalism
                 var iT = [IS1103_FC, CS2101];
                 var user_iT = new Array();
@@ -390,11 +396,6 @@
                 };
                 if(user_iT.length == 0)
                     user_iT[0]="";
-//                document.write( "IT Modules" + "<br/>");
-//                for(var i=0;i< user_iT.length;i++){
-//                    document.write(user_iT[i] + "<br>");
-//                }
-                document.write("Num Count aft IT modules: " +numModules +"<br>");
                 //Team Project
                 var teamProj = [CS3201_CS3202, CS3216_CS3217, CS3281_CS3282, CS3283_CS3284];
                 var user_teamProj = new Array();
@@ -408,11 +409,6 @@
                 if(user_teamProj == 0){
                     user_teamProj[0] = "";
                 }
-//                document.write( "Team Project Modules" + "<br/>");
-//                for(var i=0;i< user_teamProj.length;i++){
-//                    document.write(user_teamProj[i] + "<br>");
-//                }
-                document.write("Num Count aft teamProj mods: " +numModules +"<br>");
                 //Industrial Experience
                 var iE = [CP3880, CP3200_CP3202, IS4010, CP3200_IndustryCourse, NOC_iLead, CP4101];
                 var user_iE = new Array();
@@ -426,11 +422,6 @@
                 if(user_iE == 0){
                     user_iE[0] = "";
                 }
-//                document.write( "IE Modules" + "<br/>");
-//                for(var i=0;i< user_iE.length;i++){
-//                    document.write(user_iE[i].name + "<br>");
-//                }
-                document.write("Num Count aft IE: " +numModules +"<br>");
                 //Specialization
                 var userSpec = <?php echo json_encode($_POST["Specialization"]); ?>;
                 var analysis = [CS3236, CS4231_at, CS4232, CS4234];
@@ -454,10 +445,6 @@
                             else//taken
                                 numModules+=1;
                         };
-//                        document.write( "Analysis Modules" + "<br/>");
-//                        for(var i=0;i< user_spec.length;i++){
-//                            document.write(user_spec[i] + "<br>");
-//                        }
                         break;
                     case "Software Engineering":
                         
@@ -468,10 +455,6 @@
                             else//taken
                                 numModules+=1;
                         };
-//                        document.write( "Software Modules" + "<br/>");
-//                        for(var i=0;i< user_spec.length;i++){
-//                            document.write(user_software[i] + "<br>");
-//                        }
                         break;
                     case "Programming Languages":
                         
@@ -482,10 +465,6 @@
                             else//taken
                                 numModules+=1;
                         };
-//                        document.write( "ProgramLang Modules" + "<br/>");
-//                        for(var i=0;i< user_spec.length;i++){
-//                            document.write(user_spec[i] + "<br>");
-//                        }
                         break;
                     case "Computer Security":
                         
@@ -496,10 +475,6 @@
                             else//taken
                                 numModules+=1;
                         };
-//                        document.write( "Computer Security Modules" + "<br/>");
-//                        for(var i=0;i< user_spec.length;i++){
-//                            document.write(user_spec[i] + "<br>");
-//                        }
                         break;
                     case "Database":
                         
@@ -510,10 +485,6 @@
                             else//taken
                                 numModules+=1;
                         };
-//                        document.write( "Database Modules" + "<br/>");
-//                        for(var i=0;i< user_spec.length;i++){
-//                            document.write(user_spec[i] + "<br>");
-//                        }
                         break;
                     case "Artificial Intelligence":
                         
@@ -524,10 +495,6 @@
                             else//taken
                                 numModules+=1;
                         };
-//                        document.write( "Artificial Intelligence Modules" + "<br/>");
-//                        for(var i=0;i< user_spec.length;i++){
-//                            document.write(user_spec[i] + "<br>");
-//                        }
                         break;
                     case "Networking":
                         
@@ -538,10 +505,6 @@
                             else//taken
                                 numModules+=1;
                         };
-//                        document.write( "Networking Modules" + "<br/>");
-//                        for(var i=0;i< user_spec.length;i++){
-//                            document.write(user_spec[i] + "<br>");
-//                        }
                         break;
                     case "Computer Graphics and Games":
                         
@@ -552,10 +515,6 @@
                             else//taken
                                 numModules+=1;
                         };
-//                        document.write( "Computer Graphics and Games Modules" + "<br/>");
-//                        for(var i=0;i< user_spec.length;i++){
-//                            document.write(user_spec[i] + "<br>");
-//                        }
                         break;
                     case "Multimedia Information Retrieval":
                         
@@ -566,10 +525,6 @@
                             else//taken
                                 numModules+=1;
                         };
-//                        document.write( "Multimedia Information Retrieval Modules" + "<br/>");
-//                        for(var i=0;i< user_spec.length;i++){
-//                            document.write(user_spec[i] + "<br>");
-//                        }
                         break;
                     case "Parallel Computing":
                         
@@ -580,572 +535,17 @@
                             else//taken
                                 numModules+=1;
                         };
-//                        document.write( "Multimedia Information Retrieval Modules" + "<br/>");
-//                        for(var i=0;i< user_spec.length;i++){
-//                            document.write(user_spec[i] + "<br>");
-//                        }
                         break;
                     default://no specialization
                         user_spec[0] = "";
-                        document.write(user_spec[0] + "<br>");
-                        document.write("Default no specialization listed" +"<br>");
-                        
-                };
-                    document.write("Num Count aft Specialization: " +numModules +"<br>");
-//                if(userSpec == "Analysis Of Alogorithm"){
-//                        for(var i=0;i<software.length;i++){
-////                           document.write("I am at softwreeeeee");
-////                            document.write(software[i].key + software[i].code );
-//                            
-//                            if(software[i].key== true){
-//                               UEcount = UEcount - 4;
-//                               
-////                               document.write(software[i].key);
-//                            }
-//                        };
-//                  
-//                        for(var i=0;i<programLang.length;i++){
-//                           if(programLang[i].key==true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<comSec.length;i++){
-//                           if(comSec[i].key==true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< database.length;i++){
-//                           if(database[i].key== true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< aI.length;i++){
-//                           if(aI[i].key==true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< networking.length;i++){
-//                           if(networking[i].key==true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                    
-//                        for(var i=0;i< compGG.length;i++){
-//                           if(compGG[i].key== true){
-//                              UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< mir.length;i++){
-//                           if(mir[i].key== true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< mir.length;i++){
-//                           if(mir[i].key==true){
-//                              UEcount = UEcount - 4;
-//                            }
-//                        };
-//                }; 
-//                if(userSpec == "Software Engineering"){
-//                        for(var i=0;i<analysis.length;i++){
-//                           if(analysis[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<programLang.length;i++){
-//                           if(programLang[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<comSec.length;i++){
-//                           if(comSec[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< database.length;i++){
-//                           if(database[i].key=== true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< aI.length;i++){
-//                           if(aI[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< networking.length;i++){
-//                           if(networking[i].key===false){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< compGG.length;i++){
-//                           if(compGG[i].key===false){
-//                              UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< mir.length;i++){
-//                           if(mir[i].key===false){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< mir.length;i++){
-//                           if(mir[i].key===false){
-//                              UEcount = UEcount - 4;
-//                            }
-//                        };
-//                    }; 
-//                if(userSpec == "Programming Languages"){
-//                        for(var i=0;i<analysis.length;i++){
-//                           if(analysis[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };   
-//                        for(var i=0;i<software.length;i++){
-//                           if(software[i].key=== true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        for(var i=0;i<comSec.length;i++){
-//                           if(comSec[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        for(var i=0;i< database.length;i++){
-//                           if(database[i].key=== true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        for(var i=0;i< aI.length;i++){
-//                           if(aI[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        for(var i=0;i< networking.length;i++){
-//                           if(networking[i].key===false){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        for(var i=0;i< compGG.length;i++){
-//                           if(compGG[i].key===false){
-//                              UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        for(var i=0;i< mir.length;i++){
-//                           if(mir[i].key===false){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        for(var i=0;i< mir.length;i++){
-//                           if(mir[i].key===false){
-//                              UEcount = UEcount - 4;
-//                            }
-//                        };
-//                }; 
-//                if(userSpec == "Computer Security"){
-//                        for(var i=0;i<analysis.length;i++){
-//                           if(analysis[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<software.length;i++){
-//                           if(software[i].key=== true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<programLang.length;i++){
-//                           if(programLang[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< database.length;i++){
-//                           if(database[i].key=== true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< aI.length;i++){
-//                           if(aI[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< networking.length;i++){
-//                           if(networking[i].key===false){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< compGG.length;i++){
-//                           if(compGG[i].key===false){
-//                              UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< mir.length;i++){
-//                           if(mir[i].key===false){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< mir.length;i++){
-//                           if(mir[i].key===false){
-//                              UEcount = UEcount - 4;
-//                            }
-//                        };
-//                }; 
-//                if(userSpec == "Database"){
-//                        for(var i=0;i<analysis.length;i++){
-//                           if(analysis[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<software.length;i++){
-//                           if(software[i].key=== true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<programLang.length;i++){
-//                           if(programLang[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<comSec.length;i++){
-//                           if(comSec[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< aI.length;i++){
-//                           if(aI[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< networking.length;i++){
-//                           if(networking[i].key===false){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< compGG.length;i++){
-//                           if(compGG[i].key===false){
-//                              UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< mir.length;i++){
-//                           if(mir[i].key===false){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< mir.length;i++){
-//                           if(mir[i].key===false){
-//                              UEcount = UEcount - 4;
-//                            }
-//                        };
-//                }; 
-//                if(userSpec == "Artificial Intelligence"){
-//                        for(var i=0;i<analysis.length;i++){
-//                           if(analysis[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                    
-//                        for(var i=0;i<software.length;i++){
-//                           if(software[i].key=== true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                    
-//                        for(var i=0;i<programLang.length;i++){
-//                           if(programLang[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                   
-//                        for(var i=0;i<comSec.length;i++){
-//                           if(comSec[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                    
-//                        for(var i=0;i< database.length;i++){
-//                           if(database[i].key=== true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//    
-//                        for(var i=0;i< networking.length;i++){
-//                           if(networking[i].key===false){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< compGG.length;i++){
-//                           if(compGG[i].key===false){
-//                              UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< mir.length;i++){
-//                           if(mir[i].key===false){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< mir.length;i++){
-//                           if(mir[i].key===false){
-//                              UEcount = UEcount - 4;
-//                            }
-//                        };
-//                }; 
-//                if(userSpec == "Networking"){
-//                        for(var i=0;i<analysis.length;i++){
-//                           if(analysis[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<software.length;i++){
-//                           if(software[i].key=== true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<programLang.length;i++){
-//                           if(programLang[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<comSec.length;i++){
-//                           if(comSec[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< database.length;i++){
-//                           if(database[i].key=== true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                       
-//                        for(var i=0;i< aI.length;i++){
-//                           if(aI[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< compGG.length;i++){
-//                           if(compGG[i].key===false){
-//                              UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< mir.length;i++){
-//                           if(mir[i].key===false){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< mir.length;i++){
-//                           if(mir[i].key===false){
-//                              UEcount = UEcount - 4;
-//                            }
-//                        };
-//                }; 
-//                if(userSpec == "Computer Graphics and Games"){
-//                        for(var i=0;i<analysis.length;i++){
-//                           if(analysis[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<software.length;i++){
-//                           if(software[i].key=== true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<programLang.length;i++){
-//                           if(programLang[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<comSec.length;i++){
-//                           if(comSec[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< database.length;i++){
-//                           if(database[i].key=== true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< aI.length;i++){
-//                           if(aI[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< networking.length;i++){
-//                           if(networking[i].key===false){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                    
-//                        for(var i=0;i< mir.length;i++){
-//                           if(mir[i].key===false){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                    
-//                        for(var i=0;i< mir.length;i++){
-//                           if(mir[i].key===false){
-//                              UEcount = UEcount - 4;
-//                            }
-//                        };
-//                }; 
-//                if(userSpec == "Multimedia Information Retrieval"){
-//                        for(var i=0;i<analysis.length;i++){
-//                           if(analysis[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<software.length;i++){
-//                           if(software[i].key=== true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<programLang.length;i++){
-//                           if(programLang[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<comSec.length;i++){
-//                           if(comSec[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< database.length;i++){
-//                           if(database[i].key=== true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< aI.length;i++){
-//                           if(aI[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< networking.length;i++){
-//                           if(networking[i].key===false){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< compGG.length;i++){
-//                           if(compGG[i].key===false){
-//                              UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< mir.length;i++){
-//                           if(mir[i].key===false){
-//                              UEcount = UEcount - 4;
-//                            }
-//                        };
-//                }; 
-//                if(userSpec == "Parallel Computing"){
-//                        for(var i=0;i<analysis.length;i++){
-//                           if(analysis[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<software.length;i++){
-//                           if(software[i].key=== true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<programLang.length;i++){
-//                           if(programLang[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i<comSec.length;i++){
-//                           if(comSec[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< database.length;i++){
-//                           if(database[i].key=== true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< aI.length;i++){
-//                           if(aI[i].key===true){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< networking.length;i++){
-//                           if(networking[i].key===false){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< compGG.length;i++){
-//                           if(compGG[i].key===false){
-//                              UEcount = UEcount - 4;
-//                            }
-//                        };
-//                        
-//                        for(var i=0;i< mir.length;i++){
-//                           if(mir[i].key===false){
-//                               UEcount = UEcount - 4;
-//                            }
-//                        };
-//                };
-//                document.write("UE Count aft Specialization: " +UEcount);
+                        break;
+                    };
+                
                 UEcount = UEcount - 4 * (jArray.length - numModules);
                 document.write("UE: "+ UEcount  + " modular credits" + "<br>");
-                document.write("NumModules(excluding UE): "+ numModules + "<br>");
-                document.write("Completed Modules: "+ jArray.length + "<br>");
-                </script>
                 
+                </script>
+                </p>
             <div id='wherever'>Wow</div> 
                 
                 <script>

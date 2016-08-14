@@ -5,10 +5,6 @@ body{
      -moz-background-size: cover;
      -o-background-size: cover;
       background-size: cover;
-     /*background-image: url("http://i.imgur.com/Bp04i9Y.jpg");
-     background-repeat: no-repeat;
-     background-size: 100% 720px;
-     background-position: center;*/
 }
 #header{
     height:150px;
@@ -17,35 +13,43 @@ body{
     font-size: 120px;
     color:#2c3e50;
 }
+#footer{
+    height:100px;
+    margin-bottom: 21px;
+    background-color:none;
+    clear:both; clear /*the floating mainbody&sidebar*/
+}
 #bluebox{
-    width: 600px;
-    height: 600px;
+    width: 900px;
+    height: 500px;
     text-align: center;
     margin:0 auto;
     background-color: rgba(52,73,94,0.7);
     border-radius: 4px;
-    margin-top: 150px; /*supp to be 150 but backgrd:( */ 
-    margin-left: 375px;
+    margin-top: 100px; /*supp to be 150 but backgrd:( */ 
+    margin-left: 200px;
     padding-top: 20px;
 }
-#table{
+table{
     margin: 10px auto;
     text-align: center;
     font-weight: normal;
-    width: 100%;
+    width: 90%;
     color: white;
     border: 1px solid;
 }
-#table th{
+table th{
     border-bottom: 1px solid #f6f6f6;
     padding: 2px;
     text-align: center;
     border: 1px solid;
 }
-#table td{
+table td{
     border: 1px solid;
 }
 h1{
+    width:90%;
+    margin-left:45px;
     text-align: center;
     color: white;
     border-bottom-style: groove;

@@ -1,0 +1,11 @@
+var ACC1002X={code:"ACC1002X", name:"ACC1002X Financial Accounting",type:"ue", mc: 4, key: false};
+var DSC3214={code:"DSC3214", name:"DSC3214 Introduction To Optimisation",type:"ue", mc: 4, key: false};
+var DSC3216={code:"DSC3216", name:"DSC3216 Forecasting for Managerial Decisions",type:"ue", mc: 4, key: false};
+var DSC3224={code:"DSC3224", name:"DSC3224 Dynamic Pricing and Revenue Management",type:"ue", mc: 4, key: false};
+var EC1301={code:"EC1301", name:"EC1301 Principles of Economics",type:"ue", mc: 4, key: false};
+var ES2660={code:"ES2660", name:"ES2660 Communicating in the Information Age",type:"ue", mc: 4, key: false};
+var IE2110={code:"IE2110", name:"IE2110 Operations Research I",type:"ue", mc: 4, key: false};
+var IE3120={code:"IE3120", name:"IE3120 Manufacturing Logistics",type:"ue", mc: 4, key: false};
+var MA1102R={code:"MA1102R", name:"MA1102R Calculus",type:"ue", mc: 4, key: false};
+var MKT1003X={code:"MKT1003X", name:"MKT1003X Marketing",type:"ue", mc: 4, key: false};
+var ST3131={code:"ST3131", name:"ST3131 Regression Analysis",type:"ue", mc: 4, key: false};

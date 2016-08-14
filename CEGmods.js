@@ -1,0 +1,17 @@
+var CG1001={code:"CG1001", name:"CG1001 Introduction to Computer Engineering",type:"ue", mc: 4, key: false};
+var CG1108={code:"CG1108", name:"CG1108 Electrical Engineering",type:"ue", mc: 4, key: false};
+var CG2023={code:"CG2023", name:"CG2023 Signals & Systems",type:"ue", mc: 4, key: false};
+var CG2271={code:"CG2271", name:"CG2271 Real-time Operating Systems",type:"ue", mc: 4, key: false};
+var CG3002={code:"CG3002", name:"CG3002 Embedded Systems Design Project",type:"ue", mc: 6, key: false};
+var CG3207={code:"CG3207", name:"CG3207 Computer Architecture",type:"ue", mc: 4, key: false};
+var CP3880={code:"CP3880", name:"CP3880 Advanced Technology Attachment Programme ",type:"ue", mc: 4, key: false};
+var EE2020={code:"EE2020", name:"EE2020 Digital Fundamentals",type:"ue", mc: 4, key: false};
+var EE2021={code:"EE2021", name:"EE2021 Devices & Circuits",type:"ue", mc: 4, key: false};
+var EE2024={code:"EE2024", name:"EE2024 Programming for Computer Interfaces",type:"ue", mc: 4, key: false};
+var EE3031={code:"EE3031", name:"EE3031 Innovation & Enterprise I",type:"ue", mc: 4, key: false};
+var EE3204={code:"EE3204", name:"EE3204 Computer Communications Networks I",type:"ue", mc: 4, key: false};
+var EG2401={code:"EG2401", name:"EG2401 Engineering Professionalism",type:"ue", mc: 4, key: false};
+var EG3601={code:"EG3601", name:"EG3601 Industrial Attachment Programme",type:"ue", mc: 4, key: false};
+var HR2002={code:"HR2002", name:"HR2002 Human Capital in Organizations",type:"ue", mc: 4, key: false};
+var MA1505={code:"MA1505", name:"MA1505 Mathematics I",type:"ue", mc: 4, key: false};
+var MA1506={code:"MA1506", name:"MA1506 Mathematics II",type:"ue", mc: 4, key: false};

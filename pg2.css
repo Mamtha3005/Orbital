@@ -1,3 +1,6 @@
+/*style.css*/
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+/* Above line is used for online google font */
 body{
      margin: 0 auto;
      background: url("http://i.imgur.com/Bp04i9Y.jpg") no-repeat center center fixed; 
@@ -5,21 +8,6 @@ body{
      -moz-background-size: cover;
      -o-background-size: cover;
       background-size: cover;
-     /*background-image: url("http://i.imgur.com/Bp04i9Y.jpg");
-     background-repeat: no-repeat;
-     background-size: 100% 720px;
-     background-position: center;*/
-}
-h1{
-    text-align: center;
-    color: white;
-    border-bottom-style: groove;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-top-style: groove;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-color: aquamarine;
 }
 #container{
     width: auto;  /*generally 800px*/
@@ -35,12 +23,7 @@ h1{
     font-size: 120px;
     color:#2c3e50;
 }
-#menu{
-    height:60px;
-    background-color: #1abc9c;
-}
-
-#mainbody{
+#main{
     background-image:none;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -54,51 +37,16 @@ h1{
     background-color:none;
     clear:both; clear /*the floating mainbody&sidebar*/
 }
-#bluebox2{
-    width: 1000px;
-    height: 4400px;
+.bluebox2{
+    width: 600px;
+    height: 850px;
     text-align: center;
     margin:0 auto;
     background-color: rgba(52,73,94,0.7);
     border-radius: 8px;
     margin-top: 50px; /*supp to be 150 but backgrd:( */ 
-    margin-left: 200px;
+    margin-left: 340px;
     padding-top: 10px;
-}
-input[type= text], input[type=email], textarea{
-    outline: none;
-    transition: .2s all linear;
-    display:flex;
-    border: 1px solid silver;
-    border-radius: 4px;
-    padding: 8px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-}
-input, textarea{
-    margin: 10px 0;
-}
-input[type="text"], input[type="password"] {
-    height: 45px;
-    width: 300px;
-    font-size: 18px;
-    margin-bottom: 40px;
-    background-color: #fff;
-    padding-left: 40px;
-    border-radius: 4px;
-    border: none;
-}
-.btn-login{
-    padding: 15px 30px;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    background-color: #2ecc71;
-    border-bottom: 4px solid #27ae60;
-    margin-bottom: 20px;
-    cursor:pointer;
 }
 #options{
     font-size: 16px;
@@ -108,8 +56,47 @@ input[type="text"], input[type="password"] {
     width: 480px;
     height: 620px;
     padding: -50px;
+    border-color:#FFA700;
+    border-style: solid;
+    border-width: medium;
+    margin-top:10px;
+    margin-left:0px;
 }
+/* the instruc */
 .heading{
     font-size: 20px;
     margin-bottom: 10px;
+    color: #ffe4b2;
+    margin-left:10px;
+}
+/* the completed modules */
+h2 {
+background-color:#FEFFED;
+padding:15px;
+width: 400px;
+margin-left: 85px;
+text-align:center;
+border-radius:5px 5px 0 0;
+font-family: 'Lobster', cursive;
+}
+/*the yellow box*/
+input[type=submit] {
+/* how far the yellow box is from the option box */
+margin-top:10px; 
+padding:10px;
+text-align:center;
+font-size:18px;
+background:linear-gradient(#ffbc00 5%,#ffdd7f 100%);
+border:2px solid #e5a900;
+color:#fff;
+font-weight:700;
+cursor:pointer;
+width:40%;
+border-radius:5px
+}
+input[type=submit]:hover {
+background:linear-gradient(#ffdd7f 5%,#ffbc00 100%)
+}
+#dropBox{
+    visibility: hidden;
 }
